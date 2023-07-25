@@ -196,13 +196,6 @@ button {
     align-items: center;
 }
 
-#backButton {
-    display: inline-block;
-    margin-top: 10px;
-    margin-right: 10px;
-    order: 1;
-}
-
 /* CSS styles for the "Next" button */
 #nextButton {
     margin-top: 10px;
@@ -224,4 +217,14 @@ button {
     /* Change the background color on hover */
     color: #1B366A;
     /* Change the text color on hover */
+}
+
+/* CSS styles for the card when hovered to flip to the back side */
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+/* CSS styles for the card when hovered to flip back to the front side */
+.card:hover .card-back {
+    transform: rotateY(0deg);
 }
