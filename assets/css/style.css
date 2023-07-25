@@ -243,3 +243,16 @@ button {
 .return-button i:hover {
     transform: scale(1.5);
 }
+
+/* --- << Game page >> --- */
+.quiz_container {
+    width: 90%;
+    max-width: 37.5em;
+    background-color: rgba(245, 241, 243, 0.4);
+    padding: 3em 0.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.8em;
+}
