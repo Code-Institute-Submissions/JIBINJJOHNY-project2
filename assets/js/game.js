@@ -136,3 +136,57 @@
            console.error(error);
        }
    }
+   // Creator Function
+   const creator = async () => {
+       // Clear any existing content in the drag and drop containers
+       dragContainer.innerHTML = "";
+       dropContainer.innerHTML = "";
+
+       // Initialize an empty array to store random data
+       let randomData = [];
+
+       // Fetch data from the JSON file using an asynchronous function
+       const alphabetData = await fetchAlphabetData();
+
+       // Generate 3 unique random words from the alphabet data
+       for (let i = 1; i <= 3; i++) {
+           let randomWord = randomValueGenerator(alphabetData);
+
+           // Check if the randomWord is not already in the randomData array
+           if (!randomData.includes(randomWord)) {
+               // If not, add the randomWord to the randomData array
+               randomData.push(randomWord);
+           } else {
+               // If the word is already in randomData, repeat the iteration to find a new unique word
+               i -= 1;
+           }
+       }
+
+       // Create draggable image elements for each random word
+       for (let i of randomData) {
+           const imgDiv = document.createElement("div");
+           imgDiv.classList.add("draggable-image");
+           imgDiv.setAttribute("draggable", true);
+           imgDiv.innerHTML = `<img src="${i.image}" alt="${i.imageAlt}" id="${i.letter}">`;
+
+           // Append the draggable image to the dragContainer
+           dragContainer.appendChild(imgDiv);
+       }
+
+       // Randomize the order of words in the randomData array
+       randomData = randomData.sort(() => 0.5 - Math.random());
+
+       // Create word elements for each random word in the dropContainer
+       for (let i of randomData) {
+           const wordDiv = document.createElement("div");
+           wordDiv.innerHTML = `<div class='words' data-id='${i.letter}'>
+        ${i.word}
+        </div>`;
+
+           // Append the word element to the dropContainer
+           dropContainer.appendChild(wordDiv);
+       }
+
+       // Set up event listeners for the newly created elements
+       setupEventListeners();
+   };
