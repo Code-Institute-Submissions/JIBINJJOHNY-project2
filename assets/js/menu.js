@@ -32,5 +32,5 @@ alphabetsButton.addEventListener("click", () => {
 /* Function to handle the click event of the "GAME" button */
 gameButton.addEventListener("click", () => {
     // Redirect the user to the "quiz.html" page
-    window.location.href = "quiz.html";
+    window.location.href = "game.html";
 });
