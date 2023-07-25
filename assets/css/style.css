@@ -137,3 +137,30 @@ button:hover {
     height: 100vh;
     gap: 15px;
 }
+
+/* CSS for the social networks in the footer */
+.main_footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main_footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main_footer li {
+    margin: 0 10px;
+}
+
+.social-links {
+    font-size: 30px;
+    color: #1B366A;
+}
+
+.main_footer li:hover {
+    transform: scale(1.5);
+}
