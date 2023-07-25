@@ -13,3 +13,13 @@ openRulesButton.addEventListener('click', () => {
 closeModalButton.addEventListener('click', () => {
     rulesModal.style.display = 'none';
 });
+/* Function to handle the click event of the "START" button */
+redirectButton.addEventListener("click", () => {
+    // Hide the "RULES" button and the "START" button
+    openRulesButton.style.display = "none";
+    redirectButton.style.display = "none";
+
+    // Show the "ALPHABETS" button and the "GAME" button
+    alphabetsButton.style.display = "block";
+    gameButton.style.display = "block";
+});
