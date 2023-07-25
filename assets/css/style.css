@@ -144,6 +144,12 @@ button {
     margin-bottom: 50px;
 }
 
+.card h2 {
+    font-size: 80px;
+    color: #1B366A;
+    font-weight: bold;
+}
+
 .card img {
     width: 200px;
     height: 200px;
@@ -188,4 +194,34 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#backButton {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    order: 1;
+}
+
+/* CSS styles for the "Next" button */
+#nextButton {
+    margin-top: 10px;
+    display: inline-block;
+    /* Initially hide the "Next" button */
+    order: 3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    order: 2;
+}
+
+#nextButton:hover {
+    background-color: #e8e818;
+    /* Change the background color on hover */
+    color: #1B366A;
+    /* Change the text color on hover */
 }
