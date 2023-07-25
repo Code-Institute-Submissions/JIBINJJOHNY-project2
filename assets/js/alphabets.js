@@ -168,3 +168,8 @@ function shuffleAlphabet(arr) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
+
+/**Fetch the alphabet data from the JSON file and initialize the app
+ * The code calls fetchAlphabetData to fetch the alphabet data from the JSON file and initialize the app when the page loads.
+ */
+fetchAlphabetData();
