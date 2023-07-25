@@ -27,3 +27,12 @@ function getVoices() {
     shuffledVoices = [...voices];
     shuffleVoices(shuffledVoices);
 }
+/** Function to Shuffle the Array of Voices
+ * The shuffleVoices function takes an array arr and shuffles it using the Fisher-Yates algorithm to randomize the order.
+ */
+function shuffleVoices(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
