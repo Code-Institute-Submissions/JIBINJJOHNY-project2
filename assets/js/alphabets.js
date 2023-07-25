@@ -67,3 +67,14 @@ async function fetchAlphabetData() {
         console.error(error);
     }
 }
+/** Function to Shuffle the Sounds for Each Card
+ * The shuffleSounds function shuffles the available voices to randomize the speech synthesis for each card.
+ */
+function shuffleSounds() {
+    const tempVoices = [...voices];
+    shuffledVoices = [];
+    while (tempVoices.length > 0) {
+        const index = Math.floor(Math.random() * tempVoices.length);
+        shuffledVoices.push(tempVoices.splice(index, 1)[0]);
+    }
+}
