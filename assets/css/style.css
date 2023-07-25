@@ -268,3 +268,12 @@ h2 {
     line-height: 1.8em;
     color: #1B366A;
 }
+
+/* Styling for the container that holds draggable alphabet images and drop points */
+.draggable-objects,
+.drop-points {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    gap: 15px;
+}
