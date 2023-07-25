@@ -303,3 +303,8 @@ img {
     padding: 0;
     background-color: #93f028;
 }
+
+.play-again-container {
+    display: flex;
+    justify-content: space-evenly;
+}
