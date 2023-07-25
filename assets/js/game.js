@@ -26,3 +26,7 @@
            return false;
        }
    };
+   // Function to generate a random value from an array
+   const randomValueGenerator = (data) => {
+       return data[Math.floor(Math.random() * data.length)];
+   };
