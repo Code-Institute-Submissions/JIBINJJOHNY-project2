@@ -14,8 +14,39 @@
     <title>Fun Learn</title>
 </head>
 
-<body>
+<body onload="initializeApp()">
+    <!--Header -->
 
+    <header class="menu">
+        <a href="index.html" aria-label="return back to alphabet option page" class="return-button">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+        <div class="title">
+            <h1 class="app_name">Fun Learn</h1>
+            <p class="app__slogan">Where Learning is Playful!</p>
+        </div>
+    </header>
+    <!-- Main menu -->
+    <main class="mainpage_menus">
+        <!-- Card element with a flip functionality when clicked -->
+        <div class="card" onclick="flipCard()">
+            <!-- Front side of the card -->
+            <div class="card-front">
+                <h2 id="letter">A</h2> <!-- Placeholder for the letter -->
+            </div>
+            <!-- Back side of the card -->
+            <div class="card-back">
+                <img id="image" src="assets/images/apple.png" alt="Apple" width="200" height="200">
+                <!-- Image of the item -->
+                <p id="word">Apple</p> <!-- Word corresponding to the letter -->
+                <button id="speakButton" onclick="speakWord()"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+        </div>
+        <div class="button-container">
+            <!-- Button to go to the next letter -->
+            <button id="nextButton" onclick="nextLetter()">Next</button>
+        </div>
+    </main>
     <!-- Footer -->
     <footer class="main_footer">
         <ul>
