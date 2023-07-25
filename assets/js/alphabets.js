@@ -123,3 +123,15 @@ function flipCard(event) {
         backButton.style.display = 'block';
     }
 }
+/** Function to Display the Current Letter, Image, and Word
+ * The displayCurrentLetter function updates the UI with the current letter, image, and word.
+ * It retrieves the current letter data from the shuffledAlphabet array and updates the respective HTML elements.
+ */
+function displayCurrentLetter() {
+    const currentLetter = shuffledAlphabet[currentIndex];
+    letterElement.textContent = currentLetter.letter;
+    imageElement.src = currentLetter.image;
+    imageElement.alt = currentLetter.imageAlt;
+    wordElement.textContent = currentLetter.word;
+    shuffleSounds();
+}
