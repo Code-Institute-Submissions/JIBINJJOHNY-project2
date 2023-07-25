@@ -9,3 +9,7 @@ const rulesModal = document.getElementById('rules_model');
 openRulesButton.addEventListener('click', () => {
     rulesModal.style.display = 'flex';
 });
+/* Function to close the rules modal when the "Close" button inside the modal is clicked */
+closeModalButton.addEventListener('click', () => {
+    rulesModal.style.display = 'none';
+});
