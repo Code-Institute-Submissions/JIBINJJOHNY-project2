@@ -86,3 +86,17 @@ function getBritishEnglishVoice() {
     const britishEnglishVoice = voices.find((voice) => voice.lang === 'en-GB');
     return britishEnglishVoice || voices[0];
 }
+/** Function to Speak the Current Word Using Speech Synthesis
+ *The speakWord function retrieves the current letter from the shuffled alphabet and gets the corresponding word to speak.
+ *    * It creates a new SpeechSynthesisUtterance with the word to speak and sets the voice to the British English voice.
+ */
+function speakWord() {
+    const currentLetter = shuffledAlphabet[currentIndex];
+    const wordToSpeak = currentLetter.word;
+
+    const speakText = new SpeechSynthesisUtterance(wordToSpeak);
+    speakText.voice = getBritishEnglishVoice();
+
+    // Speak the word
+    synth.speak(speakText); //synth.speak to trigger the speech synthesis and speak the word
+}
