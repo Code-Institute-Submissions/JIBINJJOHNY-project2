@@ -135,3 +135,17 @@ function displayCurrentLetter() {
     wordElement.textContent = currentLetter.word;
     shuffleSounds();
 }
+
+/** Function to Initialize the App and Show the "Next" Button Initially
+ * The initializeApp function sets up the event listeners for the "Next,"and  and "Speak Word" buttons.
+ */
+function initializeApp() {
+    nextButton.style.display = 'block';
+    nextButton.addEventListener('click', nextLetter);
+    backButton.addEventListener('click', previousLetter);
+    speakButton.addEventListener('click', () => {
+        if (!isShowingImage) {
+            speakWord();
+        }
+    });
+}
