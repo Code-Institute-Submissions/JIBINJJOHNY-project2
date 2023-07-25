@@ -32,12 +32,20 @@ body {
 
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1B366A;
+    padding: 10px;
+    width: 100%;
+}
+
 .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    color: #1B366A;
 }
 
 .app_name {
@@ -51,62 +59,23 @@ body {
     font-style: italic;
 }
 
-button {
-    background-color: #0078d0;
-    border: 0;
-    border-radius: 56px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
-    outline: 0;
-    padding: 15px 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-button:before {
-    background-color: initial;
-    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-    border-radius: 125px;
-    content: "";
-    height: 50%;
-    left: 4%;
-    opacity: .5;
-    position: absolute;
-    top: 0;
-    transition: all .3s;
-    width: 92%;
-}
-
-button:hover {
-    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-    transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-    .button-71 {
-        padding: 16px 48px;
-    }
+.app_name,
+.app__slogan {
+    margin: 0;
 }
 
 .hidden {
     display: none;
 }
 
-/* CSS styles for the container element */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+button {
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #e8e818;
+    color: #1B366A;
+    font-weight: bold;
 }
 
 .modal {
@@ -135,7 +104,6 @@ button:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 15px;
 }
 
 /* CSS for the social networks in the footer */

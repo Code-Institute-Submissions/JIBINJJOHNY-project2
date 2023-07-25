@@ -23,3 +23,14 @@ redirectButton.addEventListener("click", () => {
     alphabetsButton.style.display = "block";
     gameButton.style.display = "block";
 });
+/* Function to handle the click event of the "ALPHABETS" button */
+alphabetsButton.addEventListener("click", () => {
+    // Redirect the user to the "alphabets.html" page
+    window.location.href = "alphabets.html";
+});
+
+/* Function to handle the click event of the "GAME" button */
+gameButton.addEventListener("click", () => {
+    // Redirect the user to the "quiz.html" page
+    window.location.href = "quiz.html";
+});
