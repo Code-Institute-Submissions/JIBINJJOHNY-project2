@@ -7,3 +7,27 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS styles for the body element */
+body {
+    background: url(../images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Comic Sans MS, sans-serif;
+
+}
