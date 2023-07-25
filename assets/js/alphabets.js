@@ -100,3 +100,26 @@ function speakWord() {
     // Speak the word
     synth.speak(speakText); //synth.speak to trigger the speech synthesis and speak the word
 }
+/** Function to flip the card
+ * The flipCard function is responsible for flipping the card when clicked.
+ * It checks whether the card is currently showing the image side and whether the click target is the speakButton.
+ * If the card is not showing the image side and the click target is not the speakButton, it flips the card to show the image side.
+ * If the card is showing the image side or the click target is the speakButton, it flips the card back to show the word side.
+ */
+function flipCard(event) {
+    if (!isShowingImage && event.target !== speakButton) {
+        cardFront.style.transform = 'rotateY(180deg)';
+        cardBack.style.transform = 'rotateY(0deg)';
+        isShowingImage = true;
+        card.classList.add('flipped');
+        nextButton.style.display = 'none';
+        backButton.style.display = 'none';
+    } else {
+        cardFront.style.transform = 'rotateY(0deg)';
+        cardBack.style.transform = 'rotateY(180deg)';
+        isShowingImage = false;
+        card.classList.remove('flipped');
+        nextButton.style.display = 'block';
+        backButton.style.display = 'block';
+    }
+}
