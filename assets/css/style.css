@@ -150,3 +150,42 @@ button {
     margin-bottom: 10px;
 
 }
+
+.card p {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #1B366A;
+    font-weight: bold;
+}
+
+/* CSS styles for the front and back side of the card */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* Set the background color for the card sides */
+    border: 1px solid #ccc;
+    /* Add a border around the card sides */
+    border-radius: 10px;
+    /* Add rounded corners to the card */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow to the card */
+    transition: transform 0.6s;
+    /* Add a smooth transition effect when flipping the card */
+}
+
+/* CSS styles for the back side of the card */
+.card-back {
+    transform: rotateY(180deg);
+    /* Initially hide the back side of the card by rotating it */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
