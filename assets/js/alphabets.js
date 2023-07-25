@@ -149,3 +149,13 @@ function initializeApp() {
         }
     });
 }
+/** Function to Move to the Next Letter
+ * The nextLetter function increments the currentIndex to move to the next letter in the shuffled alphabet.
+ * If the end of the alphabet is reached, it wraps around to the beginning.
+ * It sets isShowingImage to false to ensure the card shows the word side and calls displayCurrentLetter.
+ */
+function nextLetter() {
+    currentIndex = (currentIndex + 1) % shuffledAlphabet.length;
+    isShowingImage = false;
+    displayCurrentLetter();
+}
