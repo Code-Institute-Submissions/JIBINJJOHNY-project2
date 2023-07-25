@@ -107,26 +107,47 @@ button {
 }
 
 /* CSS for the social networks in the footer */
+/* Add the following CSS to your existing style.css or create a new CSS file and link it in the head section of your HTML */
+
+/* Style for the footer */
 .main_footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Style for the social links in the footer */
 .main_footer ul {
     list-style: none;
-    padding: 0;
     margin: 0;
-    display: flex;
+    padding: 0;
 }
 
-.main_footer li {
-    margin: 0 10px;
+.main_footer ul li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.social-links {
-    font-size: 30px;
-    color: #1B366A;
+.main_footer ul li:last-child {
+    margin-right: 0;
+}
+
+.main_footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Style for the social media icons from FontAwesome */
+.main_footer i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .main_footer li:hover {
@@ -249,7 +270,7 @@ button {
     width: 90%;
     max-width: 37.5em;
     background-color: rgba(245, 241, 243, 0.4);
-    padding: 3em 0.5em;
+    padding: 2em 0.5em;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -297,6 +318,7 @@ img {
     place-items: center;
     border: 0.25em dashed #1B366A;
     border-radius: 0.8em;
+    font-weight: bold;
 }
 
 .dropped {

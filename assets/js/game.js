@@ -245,3 +245,9 @@
        // Call the creator() function to set up a new game with new random elements
        creator();
    });
+
+   // Window Onload Event Listener
+   document.addEventListener("DOMContentLoaded", () => {
+       creator();
+       count = 0;
+   });
