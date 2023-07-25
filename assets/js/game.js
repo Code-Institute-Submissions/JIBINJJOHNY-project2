@@ -222,3 +222,26 @@
            element.addEventListener("drop", drop);
        });
    };
+   // Play Again Button Event Listener
+   playAgainButton.addEventListener("click", () => {
+       // Remove the "hide" class and enable dragging for all draggable image elements
+       draggableObjects.forEach((element) => {
+           element.classList.remove("hide");
+           element.setAttribute("draggable", "true");
+       });
+
+       // Reset the drop points by removing the "dropped" class and clearing their content
+       dropPoints.forEach((element) => {
+           element.classList.remove("dropped");
+           element.innerHTML = "";
+       });
+
+       // Reset the count variable to zero, indicating that no matches have been made yet
+       count = 0;
+
+       // Hide the "Play Again" button again
+       playAgainButton.classList.add("hide");
+
+       // Call the creator() function to set up a new game with new random elements
+       creator();
+   });
