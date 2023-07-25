@@ -122,3 +122,17 @@
            stopGame(); // Your code to handle game completion, if needed
        }
    };
+
+   // Fetch Alphabet Data from JSON File
+   async function fetchAlphabetData() {
+       try {
+           const response = await fetch('assets/js/alphabets.json');
+           if (!response.ok) {
+               throw new Error('Failed to fetch alphabet data');
+           }
+           const data = await response.json();
+           return data;
+       } catch (error) {
+           console.error(error);
+       }
+   }
