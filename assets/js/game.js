@@ -30,3 +30,16 @@
    const randomValueGenerator = (data) => {
        return data[Math.floor(Math.random() * data.length)];
    };
+   // When a drag operation starts. It sets the initial coordinates for touch devices or stores the dragged element's ID for mouse devices.
+   function dragStart(e) {
+       if (isTouchDevice()) {
+           // For touch devices
+           initialX = e.touches[0].clientX;
+           initialY = e.touches[0].clientY;
+           moveElement = true;
+           currentElement = e.target;
+       } else {
+           // For mouse devices
+           e.dataTransfer.setData("text", e.target.id);
+       }
+   }
