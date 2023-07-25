@@ -190,3 +190,35 @@
        // Set up event listeners for the newly created elements
        setupEventListeners();
    };
+   // Setup Event Listeners
+   const setupEventListeners = () => {
+       // Get all elements with class "words" and assign them to the dropPoints variable
+       dropPoints = document.querySelectorAll(".words");
+
+       // Get all elements with class "draggable-image" and assign them to the draggableObjects variable
+       draggableObjects = document.querySelectorAll(".draggable-image");
+
+       // Add event listeners to each draggable image element
+       draggableObjects.forEach((element) => {
+           // Listen for the "dragstart" event, which is triggered when dragging starts
+           element.addEventListener("dragstart", dragStart);
+
+           // Listen for the "touchstart" event, which is triggered when a touch interaction starts on a touch-enabled device
+           element.addEventListener("touchstart", dragStart);
+
+           // Listen for the "touchend" event, which is triggered when a touch interaction ends on a touch-enabled device
+           element.addEventListener("touchend", drop);
+
+           // Listen for the "touchmove" event, which is triggered when a touch interaction moves on a touch-enabled device
+           element.addEventListener("touchmove", touchMove);
+       });
+
+       // Add event listeners to each drop point element
+       dropPoints.forEach((element) => {
+           // Listen for the "dragover" event, which is triggered when a draggable element is being dragged over the drop point
+           element.addEventListener("dragover", dragOver);
+
+           // Listen for the "drop" event, which is triggered when a draggable element is dropped on the drop point
+           element.addEventListener("drop", drop);
+       });
+   };
