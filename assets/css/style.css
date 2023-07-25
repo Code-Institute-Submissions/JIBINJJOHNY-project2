@@ -256,3 +256,15 @@ button {
     left: 50%;
     border-radius: 0.8em;
 }
+
+/* Styling for the heading */
+h2 {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 2em auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.8em;
+    color: #1B366A;
+}
