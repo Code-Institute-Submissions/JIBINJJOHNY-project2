@@ -43,3 +43,7 @@
            e.dataTransfer.setData("text", e.target.id);
        }
    }
+   // When an element is being dragged over a valid drop target. It prevents the default action to enable dropping.
+   function dragOver(e) {
+       e.preventDefault();
+   }
