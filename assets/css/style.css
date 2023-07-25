@@ -132,3 +132,14 @@ button {
 .main_footer li:hover {
     transform: scale(1.5);
 }
+
+/* --- << Alphabets page >> --- */
+
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 50px;
+}
