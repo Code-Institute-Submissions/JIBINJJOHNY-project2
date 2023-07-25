@@ -78,3 +78,11 @@ function shuffleSounds() {
         shuffledVoices.push(tempVoices.splice(index, 1)[0]);
     }
 }
+/** Function to Get the British English Voice (Fallback)
+ * The getBritishEnglishVoice function returns the British English voice from the available voices if found, 
+ * or it falls back to the first available voice.
+ */
+function getBritishEnglishVoice() {
+    const britishEnglishVoice = voices.find((voice) => voice.lang === 'en-GB');
+    return britishEnglishVoice || voices[0];
+}
