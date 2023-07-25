@@ -36,3 +36,34 @@ function shuffleVoices(arr) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
+/** Get Available Voices and Set the onvoiceschanged Event
+ * The code calls getVoices to populate the voices array with available voices.
+ * If synth.onvoiceschanged is supported, it sets the onvoiceschanged event to call getVoices whenever the list of voices changes.
+ */
+getVoices();
+if (synth.onvoiceschanged !== undefined) {
+    synth.onvoiceschanged = getVoices;
+}
+
+/** Function to Fetch the Alphabet Data from the JSON File
+ * The fetchAlphabetData function is an asynchronous function that fetches the alphabet data from the alphabets.json file.
+ * It uses await and fetch to get the data and then parses the response using response.json().
+ */
+async function fetchAlphabetData() {
+    try {
+        const response = await fetch('assets/js/alphabets.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch alphabet data');
+        }
+        const data = await response.json();
+        shuffledAlphabet = [...data];
+        // Shuffle the alphabet on page load
+        shuffleAlphabet(shuffledAlphabet); // The fetched data is stored in the shuffledAlphabet array.
+        // Initialize the app with the first letterby calling displayCurrentLetter.
+        currentIndex = 0;
+        isShowingImage = false;
+        displayCurrentLetter();
+    } catch (error) {
+        console.error(error);
+    }
+}
