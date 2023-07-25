@@ -289,6 +289,7 @@ img {
     filter: drop-shadow(0 0.3em 0.9em rgba(0, 0, 0, 0.25));
 }
 
+/* Styling for words */
 .words {
     width: 10em;
     height: 9em;
@@ -296,4 +297,9 @@ img {
     place-items: center;
     border: 0.25em dashed #1B366A;
     border-radius: 0.8em;
+}
+
+.dropped {
+    padding: 0;
+    background-color: #93f028;
 }
