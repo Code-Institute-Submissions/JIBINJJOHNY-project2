@@ -228,3 +228,18 @@ button {
 .card:hover .card-back {
     transform: rotateY(0deg);
 }
+
+.return-button {
+    color: #1B366A;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.return-button i {
+    margin-right: 5px;
+}
+
+.return-button i:hover {
+    transform: scale(1.5);
+}
