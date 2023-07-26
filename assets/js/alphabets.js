@@ -141,7 +141,6 @@ function displayCurrentLetter() {
 function initializeApp() {
     nextButton.style.display = 'block';
     nextButton.addEventListener('click', nextLetter);
-
     voiceButton.addEventListener('click', () => {
         if (!isShowingImage) {
             speakWord();

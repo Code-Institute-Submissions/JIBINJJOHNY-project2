@@ -84,7 +84,8 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 Comic Sans M S:Font was used as the main font of the application to increase the readability of the content on the pages.
 
 -----
-
-
+### Wireframes
+- [Here is the Desktop wireframe](documents/desktopwireframe.png)
+- [Here is the mobile wireframe](documents/mobilewireframe.png)
 
 
