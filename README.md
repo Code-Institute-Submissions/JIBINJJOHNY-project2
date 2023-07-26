@@ -39,7 +39,7 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
     1. It has a button in the upper left corner of the screen that takes you to the menu page.
     1. It has a card with two sides.
         - On the front side, there are capital and small letters of the English alphabet.
-         - The back side includes the alphabet's appropriate image, words, and a button for pronouncing the word in a British English accent.
+        - The back side includes the alphabet's appropriate image, words, and a button for          pronouncing the word in a British English accent.
     1. It includes a "next" button that replaces the current letter with another.
     1. The footer has social media links to GitHub and LinkedIn accounts.
     ![card front side](documents/frontside.png)
@@ -84,8 +84,30 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 Comic Sans M S:Font was used as the main font of the application to increase the readability of the content on the pages.
 
 -----
-### Wireframes
+## Wireframes
 - [Here is the Desktop wireframe](https://github.com/JIBINJJOHNY/project2/blob/main/documents/desktopwireframe.png)
 - [Here is the mobile wireframe](https://github.com/JIBINJJOHNY/project2/blob/main/documents/mobilewireframe.png)
+
+----
+## Testing
+All test related documentation can be found in the [TESTING.md](TESTING.md) file.
+
+-----
+
+## Deployment
+
+- The site has been deployed on GitHub pages. The steps to deploy are as follows:
+  - In the [GitHub repository](https://github.com/JIBINJJOHNY/project2), go to the Settings tab.
+  - Select **Main** Branch from the Source Section drop-down menu, then click Save.
+  - The page will be automatically refreshed with a detailed ribbon display to show that the deployment has been successful.
+  - The live link can be found [here](https://jibinjjohny.github.io/project2/).
+
+### Local Deployment
+- To create a local copy of this project, you can clone it. In the terminal window of your IDE, type the following command to clone my repository:
+  - git clonehttps://github.com/JIBINJJOHNY/project2.git
+  - Alternatively, if you are using Gitpod, you can [click here](https://gitpod.io/new#https://github.com/JIBINJJOHNY/project2) to launch your Gitpod working environment.
+
+
+--------------------------------
 
 
