@@ -6,7 +6,7 @@ const letterElement = document.getElementById('letter');
 const imageElement = document.getElementById('image');
 const wordElement = document.getElementById('word');
 const nextButton = document.getElementById('nextButton');
-const speakButton = document.getElementById('speakButton');
+const voiceButton = document.getElementById('voice_btn');
 /** Speech Synthesis Related Variables
  * The code defines various variables related to speech synthesis using the Web Speech API.
  * synth is the speech synthesis object obtained from window.speechSynthesis.
@@ -106,7 +106,7 @@ function speakWord() {
  * If the card is showing the image side or the click target is the speakButton, it flips the card back to show the word side.
  */
 function flipCard(event) {
-    if (!isShowingImage && event.target !== speakButton) {
+    if (!isShowingImage && event.target !== voiceButton) {
         cardFront.style.transform = 'rotateY(180deg)';
         cardBack.style.transform = 'rotateY(0deg)';
         isShowingImage = true;
@@ -141,8 +141,8 @@ function displayCurrentLetter() {
 function initializeApp() {
     nextButton.style.display = 'block';
     nextButton.addEventListener('click', nextLetter);
-    backButton.addEventListener('click', previousLetter);
-    speakButton.addEventListener('click', () => {
+
+    voiceButton.addEventListener('click', () => {
         if (!isShowingImage) {
             speakWord();
         }

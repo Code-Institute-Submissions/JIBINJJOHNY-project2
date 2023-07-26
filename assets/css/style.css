@@ -8,17 +8,9 @@
     text-decoration: none;
 }
 
-body,
-h1,
-h2,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 /* CSS styles for the body element */
 body {
-    background: url(../images/main.jpg);
+    background: url(../images/main.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,26 +23,18 @@ body {
     font-family: Comic Sans MS, sans-serif;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #1B366A;
-    padding: 10px;
-    width: 100%;
-}
-
+/* Title styles */
 .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+    color: #1B366A;
 }
 
 .app_name {
     font-size: 80px;
     font-weight: bold;
-    text-align: center;
 }
 
 .app__slogan {
@@ -58,15 +42,12 @@ body {
     font-style: italic;
 }
 
-.app_name,
-.app__slogan {
-    margin: 0;
-}
-
+/* Hidden class for hiding elements */
 .hidden {
     display: none;
 }
 
+/* Button styles */
 button {
     padding: 10px 15px;
     font-size: 15px;
@@ -77,6 +58,7 @@ button {
     font-weight: bold;
 }
 
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -97,18 +79,15 @@ button {
     width: 70%;
 }
 
+/* Main menu styles */
 .mainpage_menus {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
-/* CSS for the social networks in the footer */
-/* Add the following CSS to your existing style.css or create a new CSS file and link it in the head section of your HTML */
-
-/* Style for the footer */
+/* Footer styles */
 .main_footer {
     color: #1B366A;
     text-align: center;
@@ -118,7 +97,7 @@ button {
     width: 100%;
 }
 
-/* Style for the social links in the footer */
+/* Social links in the footer */
 .main_footer ul {
     list-style: none;
     margin: 0;
@@ -140,7 +119,7 @@ button {
     font-size: 24px;
 }
 
-/* Style for the social media icons from FontAwesome */
+/* Social media icons styles */
 .main_footer i {
     width: 30px;
     height: 30px;
@@ -153,6 +132,15 @@ button {
 }
 
 /* --- << Alphabets page >> --- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1B366A;
+    padding: 10px;
+    width: 100%;
+}
 
 .card {
     width: 300px;
@@ -176,6 +164,9 @@ button {
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+
 
 }
 
@@ -267,6 +258,7 @@ button {
 }
 
 /* --- << Game page >> --- */
+
 .game_container {
     width: 90%;
     max-width: 37.5em;
@@ -336,36 +328,22 @@ img {
     display: none;
 }
 
-@media screen and (max-width:600px) {
+/* Media Queries */
+@media screen and (max-width: 600px) {
     .app_name {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .app__slogan {
         font-size: 20px;
     }
 
-    .words {
-        width: 8em;
-        height: 8em;
-    }
-
-    img {
-        width: 7em;
-    }
+    /* ... (responsive styles for devices with max width 600px) */
 }
 
 @media screen and (max-width: 480px) {
 
-    .app_name {
-        font-size: 30px;
-    }
-
-    .app__slogan {
-        font-size: 12px;
-    }
-
-    /* media for alphabets page */
+    /* Media for alphabets page */
     .card {
         width: 260px;
         height: 360px;
@@ -377,7 +355,7 @@ img {
         height: 90%;
     }
 
-    /* media for game page */
+    /* Media for game page */
     .game_title {
         width: 80%;
         font-size: 0.8em;
@@ -391,5 +369,4 @@ img {
     img {
         width: 4em;
     }
-
 }

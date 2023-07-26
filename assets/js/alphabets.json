@@ -1,42 +1,42 @@
 [{
         "letter": "Aa",
-        "image": "assets/images/alphabets/apple.png",
+        "image": "assets/images/alphabets/apple.webp",
         "imageAlt": "apple fruit",
         "word": "Apple"
     },
     {
         "letter": "Bb",
-        "image": "assets/images/alphabets/ball.png",
+        "image": "assets/images/alphabets/ball.webp",
         "imageAlt": "football",
         "word": "Ball"
     },
     {
         "letter": "Cc",
-        "image": "assets/images/alphabets/cat.png",
+        "image": "assets/images/alphabets/cat.webp",
         "imageAlt": "cat",
         "word": "Cat"
     },
     {
         "letter": "Dd",
-        "image": "assets/images/alphabets/dog.png",
+        "image": "assets/images/alphabets/dog.webp",
         "imageAlt": "dog",
         "word": "Dog"
     },
     {
         "letter": "Ee",
-        "image": "assets/images/alphabets/elephant.png",
+        "image": "assets/images/alphabets/elephant.webp",
         "imageAlt": "elephant",
         "word": "Elephant"
     },
     {
         "letter": "Ff",
-        "image": "assets/images/alphabets/fish.png",
+        "image": "assets/images/alphabets/fish.webp",
         "imageAlt": "fish",
         "word": "Fish"
     },
     {
         "letter": "Gg",
-        "image": "assets/images/alphabets/grape.png",
+        "image": "assets/images/alphabets/grape.webp",
         "imageAlt": "grapes",
         "word": "Grapes"
     },
@@ -78,7 +78,7 @@
     },
     {
         "letter": "Nn",
-        "image": "assets/images/alphabets/nest.png",
+        "image": "assets/images/alphabets/nest.webp",
         "imageAlt": "nest contains two eggs",
         "word": "Nest"
     },
@@ -96,13 +96,13 @@
     },
     {
         "letter": "Qq",
-        "image": "assets/images/alphabets/queen.png",
+        "image": "assets/images/alphabets/queen.webp",
         "imageAlt": "queen",
         "word": "Queen"
     },
     {
         "letter": "Rr",
-        "image": "assets/images/alphabets/rabbit.png",
+        "image": "assets/images/alphabets/rabbit.webp",
         "imageAlt": "rabbit",
         "word": "Rabbit"
     },
@@ -114,7 +114,7 @@
     },
     {
         "letter": "Tt",
-        "image": "assets/images/alphabets/tiger.png",
+        "image": "assets/images/alphabets/tiger.webp",
         "imageAlt": "tiger",
         "word": "Tiger"
     },
@@ -126,7 +126,7 @@
     },
     {
         "letter": "Vv",
-        "image": "assets/images/alphabets/violin.png",
+        "image": "assets/images/alphabets/violin.webp",
         "imageAlt": "violin",
         "word": "Violin"
     },

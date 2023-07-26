@@ -71,5 +71,12 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 - [Birme](https://www.birme.net/) was used to reduce the image size.
 
 ---
+## Design
+- The image below represent the overall color scheme used throughout the app.
+
+![colors](documents/colors.png)
+
+
+
 
 
