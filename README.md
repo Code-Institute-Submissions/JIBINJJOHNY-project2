@@ -85,7 +85,7 @@ Comic Sans M S:Font was used as the main font of the application to increase the
 
 -----
 ### Wireframes
-- [Here is the Desktop wireframe](documents/desktopwireframe.png)
-- [Here is the mobile wireframe](documents/mobilewireframe.png)
+- [Here is the Desktop wireframe](https://github.com/JIBINJJOHNY/project2/blob/main/documents/desktopwireframe.png)
+- [Here is the mobile wireframe](https://github.com/JIBINJJOHNY/project2/blob/main/documents/mobilewireframe.png)
 
 

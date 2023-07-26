@@ -16,7 +16,6 @@ let voices = []; //voices is an array to store available speech synthesis voices
 let shuffledAlphabet = []; //shuffledAlphabet is an array to store the shuffled alphabet data fetched from the JSON file.
 let shuffledVoices = []; //shuffledVoices is an array to store the shuffled available speech synthesis voices.
 let currentIndex = 0; //currentIndex keeps track of the current letter index in the shuffled alphabet array.
-
 let isShowingImage = false; //isShowingImage is a flag to track whether the card is currently showing the image side or the word side
 /** Function to Get Available Speech Synthesis Voices
  * The getVoices function populates the voices array with available speech synthesis voices and shuffles them using shuffleVoices.
@@ -141,11 +140,7 @@ function displayCurrentLetter() {
 function initializeApp() {
     nextButton.style.display = 'block';
     nextButton.addEventListener('click', nextLetter);
-    voiceButton.addEventListener('click', () => {
-        if (!isShowingImage) {
-            speakWord();
-        }
-    });
+    voiceButton.addEventListener('click', () => {});
 }
 /** Function to Move to the Next Letter
  * The nextLetter function increments the currentIndex to move to the next letter in the shuffled alphabet.
