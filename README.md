@@ -40,13 +40,20 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
     1. It has a card with two sides.
         - On the front side, there are capital and small letters of the English alphabet.
          - The back side includes the alphabet's appropriate image, words, and a button for pronouncing the word in a British English accent.
-    1. It includes a button that replaces the current letter with another.
+    1. It includes a "next" button that replaces the current letter with another.
     1. The footer has social media links to GitHub and LinkedIn accounts.
     ![card front side](documents/frontside.png)
     ![card back side](documents/backside.png)
+    ---
 
-
-
-
-
++ ### Game Page
+    1. It has a button in the upper left corner of the screen that takes you to the menu page.
+    1. Alphabet Images: Explain that the game displays draggable alphabet images representing different letters.
+    1. Word Drop Zones: Describe the drop zones where players can drag the alphabet images to match them with their correct words.
+    1.Highlight the game encourages interactive learning through drag-and-drop interactions. The background color of the drop zone changes to green. when you drop the correct image
+    1. Random Order: Mention that the alphabet images, words, and sounds are randomized for each round to keep the game engaging.
+    1. It has a "Play again" button, which replaces the current images and words."The Play Again" button appears only when three images match the corresponding word in the drop zone."
+    1. The footer has social media links to GitHub and LinkedIn accounts.
+  ![Drag and drop the game before starting it](documents/gamebefore.png)
+  ![Drag and drop game after game](documents/gameafter.png)
 
