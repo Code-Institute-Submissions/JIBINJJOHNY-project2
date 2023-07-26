@@ -29,7 +29,6 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Comic Sans MS, sans-serif;
-
 }
 
 .menu {
@@ -111,10 +110,9 @@ button {
 
 /* Style for the footer */
 .main_footer {
-    background-color: #333;
-    color: #fff;
+    color: #1B366A;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -137,7 +135,7 @@ button {
 }
 
 .main_footer a {
-    color: #fff;
+    color: #1B366A;
     text-decoration: none;
     font-size: 24px;
 }
@@ -169,6 +167,9 @@ button {
     font-size: 80px;
     color: #1B366A;
     font-weight: bold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
 .card img {
@@ -219,7 +220,7 @@ button {
 
 /* CSS styles for the "Next" button */
 #nextButton {
-    margin-top: 10px;
+    margin-top: 0px;
     display: inline-block;
     /* Initially hide the "Next" button */
     order: 3;
@@ -266,7 +267,7 @@ button {
 }
 
 /* --- << Game page >> --- */
-.quiz_container {
+.game_container {
     width: 90%;
     max-width: 37.5em;
     background-color: rgba(245, 241, 243, 0.4);
@@ -279,7 +280,7 @@ button {
 }
 
 /* Styling for the heading */
-h2 {
+.game_title {
     text-align: center;
     width: 60%;
     margin: 0 auto 2em auto;
@@ -352,4 +353,43 @@ img {
     img {
         width: 7em;
     }
+}
+
+@media screen and (max-width: 480px) {
+
+    .app_name {
+        font-size: 30px;
+    }
+
+    .app__slogan {
+        font-size: 12px;
+    }
+
+    /* media for alphabets page */
+    .card {
+        width: 260px;
+        height: 360px;
+    }
+
+    .card-front,
+    .card-back {
+        width: 90%;
+        height: 90%;
+    }
+
+    /* media for game page */
+    .game_title {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .words {
+        width: 5em;
+        height: 5em;
+    }
+
+    img {
+        width: 4em;
+    }
+
 }
