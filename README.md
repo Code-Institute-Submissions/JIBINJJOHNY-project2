@@ -108,6 +108,14 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
   - Alternatively, if you are using Gitpod, you can [click here](https://gitpod.io/new#https://github.com/JIBINJJOHNY/project2) to launch your Gitpod working environment.
 
 
---------------------------------
+-----
+## Future improvements
+- Add Numbers
+- Add Add Basic Arithemetic operations.
+- Add Add more intresting games.
+- add custom 404 page.
+- Improve commit message quality (I'm a git bigginer, so not all commits meet standards, but will try to improve in future)
+
+------
 
 
