@@ -20,3 +20,11 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 * As a developer, I want to create a web app that offers a variety of alphabet-related activities and games, so I can provide a diverse and enriching learning experience for young users.
 * As a language educator, I need the web app to provide audio support for letter sounds and pronunciation, so I can assist students in developing their phonics skills.
 * As a school administrator, I want the web app to be accessible on various devices, including tablets and smartphones, so students can access it both in school and at home.
+
+## Features
+
++ ### Menu Page
+    - There are 2 buttons on the Menu page:
+        1. RULES button which leads to opens modal window with rules of app.
+        1. START button, which leads to two other option buttons: the ALPHABETS button and the GAME button.
+
