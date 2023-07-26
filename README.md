@@ -10,3 +10,13 @@ With Fun Learn, learning becomes an adventure! Our web app offers a unique blend
 The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/)
 
 ![Responsive Mockup](documents/mockup_screenshot.png)
+
+---
+## User Stories
+* As a parent, I want my child to have a fun and interactive way to learn alphabets, so I can encourage their early literacy development and make learning enjoyable for them.
+* As a kindergarten teacher, I need a web app with engaging drag-and-drop games for alphabets, so I can incorporate interactive activities into my classroom and enhance my students' learning experience.
+* As a preschooler, I want to play fun drag-and-drop games with colorful images and letters, so I can improve my letter recognition skills and have a great time learning.
+* As a caregiver, I need an educational web app that is easy to use and visually appealing, so I can introduce young children to alphabets and support their learning while keeping them entertained.
+* As a developer, I want to create a web app that offers a variety of alphabet-related activities and games, so I can provide a diverse and enriching learning experience for young users.
+* As a language educator, I need the web app to provide audio support for letter sounds and pronunciation, so I can assist students in developing their phonics skills.
+* As a school administrator, I want the web app to be accessible on various devices, including tablets and smartphones, so students can access it both in school and at home.
