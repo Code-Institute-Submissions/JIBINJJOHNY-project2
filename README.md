@@ -24,7 +24,29 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 ## Features
 
 + ### Menu Page
-    - There are 2 buttons on the Menu page:
+    - There are 4 buttons on the Menu page:
         1. RULES button which leads to opens modal window with rules of app.
         1. START button, which leads to two other option buttons: the ALPHABETS button and the GAME button.
+        1. ALPHABETS button will initially be hidden and will only appear when someone clicks the START button. The button will leads to the Alphabets page.
+        1. GAME button will also initially hidden and will only appear when someone click START button.The button will leads to Game page.
+
+        1. The footer has social media links to GitHub and LinkedIn accounts.
+
+           ![Menu Page](documents/menupage.png)
+           ![options](documents/optionpage.png)
+           --------
++ ### Alphabets Page
+    1. It has a button in the upper left corner of the screen that takes you to the menu page.
+    1. It has a card with two sides.
+        - On the front side, there are capital and small letters of the English alphabet.
+         - The back side includes the alphabet's appropriate image, words, and a button for pronouncing the word in a British English accent.
+    1. It includes a button that replaces the current letter with another.
+    1. The footer has social media links to GitHub and LinkedIn accounts.
+    ![card front side](documents/frontside.png)
+    ![card back side](documents/backside.png)
+
+
+
+
+
 

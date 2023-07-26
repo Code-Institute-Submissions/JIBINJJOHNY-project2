@@ -7,47 +7,40 @@ const imageElement = document.getElementById('image');
 const wordElement = document.getElementById('word');
 const nextButton = document.getElementById('nextButton');
 const speakButton = document.getElementById('speakButton');
-/** Speech Synthesis Related Variables
- * The code defines various variables related to speech synthesis using the Web Speech API.
- * synth is the speech synthesis object obtained from window.speechSynthesis.
- */
-const synth = window.speechSynthesis;
-let voices = []; //voices is an array to store available speech synthesis voices
-let shuffledAlphabet = []; //shuffledAlphabet is an array to store the shuffled alphabet data fetched from the JSON file.
-let shuffledVoices = []; //shuffledVoices is an array to store the shuffled available speech synthesis voices.
-let currentIndex = 0; //currentIndex keeps track of the current letter index in the shuffled alphabet array.
 
-let isShowingImage = false; //isShowingImage is a flag to track whether the card is currently showing the image side or the word side
-/** Function to Get Available Speech Synthesis Voices
- * The getVoices function populates the voices array with available speech synthesis voices and shuffles them using shuffleVoices.
- */
+// Speech Synthesis Related Variables
+const synth = window.speechSynthesis;
+let voices = [];
+let shuffledAlphabet = [];
+let shuffledVoices = [];
+let shuffledIndexes = []; // Array to store shuffled indexes of the alphabet data
+let currentIndex = 0;
+let progress = 0; // Variable to track the progress through the JSON data
+let lastLetterIndex = 0; // Variable to store the index of the last letter shown in the previous round
+let isShowingImage = false;
+
+// Function to Get Available Speech Synthesis Voices
 function getVoices() {
     voices = synth.getVoices();
     shuffledVoices = [...voices];
     shuffleVoices(shuffledVoices);
 }
-/** Function to Shuffle the Array of Voices
- * The shuffleVoices function takes an array arr and shuffles it using the Fisher-Yates algorithm to randomize the order.
- */
+
+// Function to Shuffle the Array of Voices
 function shuffleVoices(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
-/** Get Available Voices and Set the onvoiceschanged Event
- * The code calls getVoices to populate the voices array with available voices.
- * If synth.onvoiceschanged is supported, it sets the onvoiceschanged event to call getVoices whenever the list of voices changes.
- */
+
+// Get Available Voices and Set the onvoiceschanged Event
 getVoices();
 if (synth.onvoiceschanged !== undefined) {
     synth.onvoiceschanged = getVoices;
 }
 
-/** Function to Fetch the Alphabet Data from the JSON File
- * The fetchAlphabetData function is an asynchronous function that fetches the alphabet data from the alphabets.json file.
- * It uses await and fetch to get the data and then parses the response using response.json().
- */
+// Function to Fetch the Alphabet Data from the JSON File
 async function fetchAlphabetData() {
     try {
         const response = await fetch('assets/js/alphabets.json');
@@ -56,19 +49,54 @@ async function fetchAlphabetData() {
         }
         const data = await response.json();
         shuffledAlphabet = [...data];
-        // Shuffle the alphabet on page load
-        shuffleAlphabet(shuffledAlphabet); // The fetched data is stored in the shuffledAlphabet array.
-        // Initialize the app with the first letterby calling displayCurrentLetter.
-        currentIndex = 0;
-        isShowingImage = false;
-        displayCurrentLetter();
+        initializeNewRound();
     } catch (error) {
         console.error(error);
     }
 }
-/** Function to Shuffle the Sounds for Each Card
- * The shuffleSounds function shuffles the available voices to randomize the speech synthesis for each card.
- */
+
+// Function to Initialize the App for a New Round
+function initializeNewRound() {
+    shuffledIndexes = shuffleArray([...Array(shuffledAlphabet.length).keys()]);
+    currentIndex = 0;
+    isShowingImage = false;
+    lastLetterIndex = 0; // Reset lastLetterIndex for a new round
+    displayCurrentLetter();
+}
+
+// Function to Shuffle the Entire Alphabet Data (Letters, Words, and Images)
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// Function to Move to the Next Letter
+function nextLetter() {
+    currentIndex++;
+    if (currentIndex === shuffledIndexes.length) {
+        // All letters have been shown, start a new round
+        lastLetterIndex = shuffledIndexes[shuffledIndexes.length - 1];
+        initializeNewRound();
+    } else {
+        isShowingImage = false;
+        displayCurrentLetter();
+    }
+}
+
+// Function to Display the Current Letter, Image, and Word
+function displayCurrentLetter() {
+    const currentLetter = shuffledAlphabet[shuffledIndexes[currentIndex]];
+    letterElement.textContent = currentLetter.letter;
+    imageElement.src = currentLetter.image;
+    imageElement.alt = currentLetter.imageAlt;
+    wordElement.textContent = currentLetter.word;
+    shuffleSounds();
+}
+
+// Function to Shuffle the Sounds for Each Card
 function shuffleSounds() {
     const tempVoices = [...voices];
     shuffledVoices = [];
@@ -77,34 +105,26 @@ function shuffleSounds() {
         shuffledVoices.push(tempVoices.splice(index, 1)[0]);
     }
 }
-/** Function to Get the British English Voice (Fallback)
- * The getBritishEnglishVoice function returns the British English voice from the available voices if found, 
- * or it falls back to the first available voice.
- */
+
+// Function to Get the British English Voice (Fallback)
 function getBritishEnglishVoice() {
     const britishEnglishVoice = voices.find((voice) => voice.lang === 'en-GB');
     return britishEnglishVoice || voices[0];
 }
-/** Function to Speak the Current Word Using Speech Synthesis
- *The speakWord function retrieves the current letter from the shuffled alphabet and gets the corresponding word to speak.
- *    * It creates a new SpeechSynthesisUtterance with the word to speak and sets the voice to the British English voice.
- */
+
+// Function to Speak the Current Word Using Speech Synthesis
 function speakWord() {
-    const currentLetter = shuffledAlphabet[currentIndex];
+    const currentLetter = shuffledAlphabet[shuffledIndexes[currentIndex]];
     const wordToSpeak = currentLetter.word;
 
     const speakText = new SpeechSynthesisUtterance(wordToSpeak);
     speakText.voice = getBritishEnglishVoice();
 
     // Speak the word
-    synth.speak(speakText); //synth.speak to trigger the speech synthesis and speak the word
+    synth.speak(speakText);
 }
-/** Function to flip the card
- * The flipCard function is responsible for flipping the card when clicked.
- * It checks whether the card is currently showing the image side and whether the click target is the speakButton.
- * If the card is not showing the image side and the click target is not the speakButton, it flips the card to show the image side.
- * If the card is showing the image side or the click target is the speakButton, it flips the card back to show the word side.
- */
+
+// Function to flip the card
 function flipCard(event) {
     if (!isShowingImage && event.target !== speakButton) {
         cardFront.style.transform = 'rotateY(180deg)';
@@ -112,62 +132,20 @@ function flipCard(event) {
         isShowingImage = true;
         card.classList.add('flipped');
         nextButton.style.display = 'none';
-        backButton.style.display = 'none';
     } else {
         cardFront.style.transform = 'rotateY(0deg)';
         cardBack.style.transform = 'rotateY(180deg)';
         isShowingImage = false;
         card.classList.remove('flipped');
         nextButton.style.display = 'block';
-        backButton.style.display = 'block';
     }
-}
-/** Function to Display the Current Letter, Image, and Word
- * The displayCurrentLetter function updates the UI with the current letter, image, and word.
- * It retrieves the current letter data from the shuffledAlphabet array and updates the respective HTML elements.
- */
-function displayCurrentLetter() {
-    const currentLetter = shuffledAlphabet[currentIndex];
-    letterElement.textContent = currentLetter.letter;
-    imageElement.src = currentLetter.image;
-    imageElement.alt = currentLetter.imageAlt;
-    wordElement.textContent = currentLetter.word;
-    shuffleSounds();
 }
 
-/** Function to Initialize the App and Show the "Next" Button Initially
- * The initializeApp function sets up the event listeners for the "Next,"and  and "Speak Word" buttons.
- */
-function initializeApp() {
-    nextButton.style.display = 'block';
-    nextButton.addEventListener('click', nextLetter);
-    backButton.addEventListener('click', previousLetter);
-    speakButton.addEventListener('click', () => {
-        if (!isShowingImage) {
-            speakWord();
-        }
-    });
-}
-/** Function to Move to the Next Letter
- * The nextLetter function increments the currentIndex to move to the next letter in the shuffled alphabet.
- * If the end of the alphabet is reached, it wraps around to the beginning.
- * It sets isShowingImage to false to ensure the card shows the word side and calls displayCurrentLetter.
- */
-function nextLetter() {
-    currentIndex = (currentIndex + 1) % shuffledAlphabet.length;
-    isShowingImage = false;
-    displayCurrentLetter();
-}
-/** Function to Shuffle the Alphabet Array
- * The shuffleAlphabet function shuffles the arr array using the Fisher-Yates algorithm to randomize the order of the alphabet data.
- */
-function shuffleAlphabet(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-}
-/**Fetch the alphabet data from the JSON file and initialize the app
- * The code calls fetchAlphabetData to fetch the alphabet data from the JSON file and initialize the app when the page loads.
- */
+// Event listener for "Next" button click
+nextButton.addEventListener('click', nextLetter);
+
+// Event listener for card click to flip the card
+card.addEventListener('click', flipCard);
+
+// Fetch the alphabet data from the JSON file and initialize the app
 fetchAlphabetData();
