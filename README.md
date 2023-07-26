@@ -56,4 +56,20 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
     1. The footer has social media links to GitHub and LinkedIn accounts.
   ![Drag and drop the game before starting it](documents/gamebefore.png)
   ![Drag and drop game after game](documents/gameafter.png)
+  ----
+
+
+## Technologies Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages.
+- [Figma](https://www.figma.com/) was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [Birme](https://www.birme.net/) was used to reduce the image size.
+
+---
+
 
