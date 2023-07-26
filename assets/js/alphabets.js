@@ -86,8 +86,8 @@ function getBritishEnglishVoice() {
     return britishEnglishVoice || voices[0];
 }
 /** Function to Speak the Current Word Using Speech Synthesis
- *The speakWord function retrieves the current letter from the shuffled alphabet and gets the corresponding word to speak.
- *    * It creates a new SpeechSynthesisUtterance with the word to speak and sets the voice to the British English voice.
+ * The speakWord function retrieves the current letter from the shuffled alphabet and gets the corresponding word to speak.
+ * It creates a new SpeechSynthesisUtterance with the word to speak and sets the voice to the British English voice.
  */
 function speakWord() {
     const currentLetter = shuffledAlphabet[currentIndex];
@@ -167,7 +167,7 @@ function shuffleAlphabet(arr) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
-/**Fetch the alphabet data from the JSON file and initialize the app
+/** Fetch the alphabet data from the JSON file and initialize the app
  * The code calls fetchAlphabetData to fetch the alphabet data from the JSON file and initialize the app when the page loads.
  */
 fetchAlphabetData();

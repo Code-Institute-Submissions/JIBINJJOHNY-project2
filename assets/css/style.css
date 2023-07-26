@@ -100,8 +100,6 @@ button {
 /* Social links in the footer */
 .main_footer ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .main_footer ul li {
@@ -166,8 +164,6 @@ button {
     margin-bottom: 10px;
     object-fit: cover;
     object-position: top;
-
-
 }
 
 .card p {
@@ -324,6 +320,7 @@ img {
     justify-content: space-evenly;
 }
 
+/*Hide drag image and play again button*/
 .hide {
     display: none;
 }

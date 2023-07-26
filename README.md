@@ -75,7 +75,15 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
 - The image below represent the overall color scheme used throughout the app.
 
 ![colors](documents/colors.png)
+- The color #E8E818 is a bright yellow shade. Yellow is a highly visible color that naturally draws attention and Yellow is often associated with energy, optimism, and happiness, which can create a positive emotional impact on users.
+- Blue is often associated with professionalism, trustworthiness and reliability. By using #1B366A in the design, it can give the web application a sense of credibility, which is essential for building trust with users. 
+-  #93F028 is a vibrant and lively green color that exudes energy and positivity. It can be used to add a fresh and dynamic feel to the website, making it more engaging and inviting for users.
+-  #F5F1F3 is a clean and neutral color that creates a sense of simplicity and minimalism. It is often used as a background color to provide a subtle and unobtrusive canvas for other elements on the web app.
+----
+![font](documents/comic_sans_ms.jpeg)
+Comic Sans M S:Font was used as the main font of the application to increase the readability of the content on the pages.
 
+-----
 
 
 

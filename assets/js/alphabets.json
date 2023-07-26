@@ -42,37 +42,37 @@
     },
     {
         "letter": "Hh",
-        "image": "assets/images/alphabets/hat.png",
+        "image": "assets/images/alphabets/hat.webp",
         "imageAlt": "hat",
         "word": "Hat"
     },
     {
         "letter": "Ii",
-        "image": "assets/images/alphabets/ice-cream.png",
+        "image": "assets/images/alphabets/ice-cream.webp",
         "imageAlt": "ice cream",
         "word": "Ice Cream"
     },
     {
         "letter": "Jj",
-        "image": "assets/images/alphabets/jug.png",
+        "image": "assets/images/alphabets/jug.webp",
         "imageAlt": "glass jug",
         "word": "Jug"
     },
     {
         "letter": "Kk",
-        "image": "assets/images/alphabets/kite.png",
+        "image": "assets/images/alphabets/kite.webp",
         "imageAlt": "kite",
         "word": "Kite"
     },
     {
         "letter": "Ll",
-        "image": "assets/images/alphabets/leaf.png",
+        "image": "assets/images/alphabets/leaf.webp",
         "imageAlt": "green leaf",
         "word": "Leaf"
     },
     {
         "letter": "Mm",
-        "image": "assets/images/alphabets/monkey.png",
+        "image": "assets/images/alphabets/monkey.webp",
         "imageAlt": "monkey",
         "word": "Monkey"
     },
@@ -84,13 +84,13 @@
     },
     {
         "letter": "Oo",
-        "image": "assets/images/alphabets/onion.png",
+        "image": "assets/images/alphabets/onion.webp",
         "imageAlt": "onion",
         "word": "Onion"
     },
     {
         "letter": "Pp",
-        "image": "assets/images/alphabets/pen.png",
+        "image": "assets/images/alphabets/pen.webp",
         "imageAlt": "pen",
         "word": "Pen"
     },
@@ -108,7 +108,7 @@
     },
     {
         "letter": "Ss",
-        "image": "assets/images/alphabets/sun.png",
+        "image": "assets/images/alphabets/sun.webp",
         "imageAlt": "sun",
         "word": "Sun"
     },
@@ -120,7 +120,7 @@
     },
     {
         "letter": "Uu",
-        "image": "assets/images/alphabets/umbrella.png",
+        "image": "assets/images/alphabets/umbrella.webp",
         "imageAlt": "umbrella",
         "word": "Umbrella"
     },
@@ -132,25 +132,25 @@
     },
     {
         "letter": "Ww",
-        "image": "assets/images/alphabets/watermelon.png",
+        "image": "assets/images/alphabets/watermelon.webp",
         "imageAlt": "watermelon",
         "word": "Watermelon"
     },
     {
         "letter": "Xx",
-        "image": "assets/images/alphabets/xylophone.png",
+        "image": "assets/images/alphabets/xylophone.webp",
         "imageAlt": "xylophone",
         "word": "Xylophone"
     },
     {
         "letter": "Yy",
-        "image": "assets/images/alphabets/yolk.png",
+        "image": "assets/images/alphabets/yolk.webp",
         "imageAlt": "egg yolk",
         "word": "Yolk"
     },
     {
         "letter": "Zz",
-        "image": "assets/images/alphabets/zebra.png",
+        "image": "assets/images/alphabets/zebra.webp",
         "imageAlt": "zebra",
         "word": "Zebra"
     }
