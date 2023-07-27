@@ -13,65 +13,63 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Fun Learn</title>
 </head>
+<!--Header -->
 
-<body onload="initializeApp()">
-    <!--Header -->
+<header class="menu">
+    <a href="index.html" aria-label="Return back to main page" class="return-button">
+        <i class="fa-solid fa-circle-left"></i>
+    </a>
+    <div class="title">
+        <h1 class="app_name">Fun Learn</h1>
+        <p class="app__slogan">Where Learning is Playful!</p>
+    </div>
+</header>
+<!-- Main menu -->
+<main class="alphabet_card">
+    <!-- Card element with a flip functionality when clicked -->
+    <div class="card" onclick="flipCard()">
+        <!-- Front side of the card -->
+        <div class="card-front">
+            <h2 id="letter">Aa</h2> <!-- Placeholder for the letter -->
+        </div>
+        <!-- Back side of the card -->
+        <div class="card-back">
+            <img id="image" src="assets/images/alphabets/apple.webp" alt="Apple">
+            <!-- Image of the item -->
+            <p id="word">Apple</p> <!-- Word corresponding to the letter -->
+            <button id="voice_btn" aria-label="button for speak the word" onclick="speakWord()"><i
+                    class="fa-solid fa-volume-high"></i></button>
+        </div>
+    </div>
+    <div class="button-container">
+        <!-- Button to go to the next letter -->
+        <button id="nextButton" aria-label="button for next letter " onclick="nextLetter()">Next</button>
+    </div>
+    </div>
+</main>
+<!-- Footer -->
+<footer class="main_footer">
+    <ul>
+        <li>
+            <a href="https://github.com/JIBINJJOHNY" target="_blank" rel="noopener" class="social-links"
+                aria-label="Visit my linkedin page(opens in a new tab)">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/jibin-jain-johny-1b564a78/" target="_blank" rel="noopener"
+                class="social-links" aria-label="VVisit my linkedin page(opens in a new tab)">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
-    <header class="menu">
-        <a href="index.html" aria-label="Return back to main page" class="return-button">
-            <i class="fa-solid fa-circle-left"></i>
-        </a>
-        <div class="title">
-            <h1 class="app_name">Fun Learn</h1>
-            <p class="app__slogan">Where Learning is Playful!</p>
-        </div>
-    </header>
-    <!-- Main menu -->
-    <main class="mainpage_menus">
-        <!-- Card element with a flip functionality when clicked -->
-        <div class="card" onclick="flipCard()">
-            <!-- Front side of the card -->
-            <div class="card-front">
-                <h2 id="letter">Aa</h2> <!-- Placeholder for the letter -->
-            </div>
-            <!-- Back side of the card -->
-            <div class="card-back">
-                <img id="image" src="assets/images/alphabets/apple.webp" alt="Apple">
-                <!-- Image of the item -->
-                <p id="word">Apple</p> <!-- Word corresponding to the letter -->
-                <button id="voice_btn" aria-label="button for speak the word" onclick="speakWord()"><i
-                        class="fa-solid fa-volume-high"></i></button>
-            </div>
-        </div>
-        <div class="button-container">
-            <!-- Button to go to the next letter -->
-            <button id="nextButton" aria-label="button for next letter " onclick="nextLetter()">Next</button>
-        </div>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="main_footer">
-        <ul>
-            <li>
-                <a href="https://github.com/JIBINJJOHNY" target="_blank" rel="noopener" class="social-links"
-                    aria-label="Visit my linkedin page(opens in a new tab)">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/jibin-jain-johny-1b564a78/" target="_blank" rel="noopener"
-                    class="social-links" aria-label="VVisit my linkedin page(opens in a new tab)">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
+<!--Link for FontAwesome icons-->
+<script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
 
-    <!--Link for FontAwesome icons-->
-    <script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
-
-    <!--Script for js file-->
-    <script src="assets/js/alphabets.js"></script>
+<!--Script for js file-->
+<script src="assets/js/alphabets.js"></script>
 </body>
 
 </html>

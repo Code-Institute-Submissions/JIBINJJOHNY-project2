@@ -1,11 +1,10 @@
-/*------ Global Settings------*/
+/* ----- << Global Settings >> -----*/
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
 }
 
 /* CSS styles for the body element */
@@ -13,16 +12,14 @@ body {
     background: url(../images/main.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    margin: 0;
     font-family: Comic Sans MS, sans-serif;
 }
 
+/*----- << Home Page Styling >>----- */
 /* Title styles */
 .title {
     display: flex;
@@ -30,10 +27,11 @@ body {
     align-items: center;
     flex: 1;
     color: #1B366A;
+    margin-top: 20px;
 }
 
 .app_name {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -83,8 +81,7 @@ button {
 .mainpage_menus {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10%;
 }
 
 /* Footer styles */
@@ -130,6 +127,10 @@ button {
 }
 
 /* --- << Alphabets page >> --- */
+.alphabet_card {
+    margin-top: 2%;
+    margin-left: 5%;
+}
 
 .menu {
     display: flex;
@@ -327,6 +328,21 @@ img {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
+
+    /* Media for main page */
+    .modal-content h2 {
+        font-size: 8px;
+    }
+
+    .modal-content p {
+        font-size: 7px;
+    }
+
+    .modal-content .ruleclose {
+        padding: 2px 2px;
+        font-size: 8px;
+    }
+
     .app_name {
         font-size: 40px;
     }
@@ -334,11 +350,11 @@ img {
     .app__slogan {
         font-size: 20px;
     }
-
-    /* ... (responsive styles for devices with max width 600px) */
 }
 
+/* ... (responsive styles for devices with max width 600px) */
 @media screen and (max-width: 480px) {
+
 
     /* Media for alphabets page */
     .card {
