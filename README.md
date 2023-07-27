@@ -152,3 +152,8 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
 [Yolk](https://www.istockphoto.com/de/foto/raw-eigelb-gm517542714-89544969)
 [Zebra](https://www.istockphoto.com/de/vektor/zebra-logo-isoliertes-zebra-auf-wei%C3%9Fem-hintergrund-gm1256855778-368148075)
 
+
+### Tools
+- [Figma](https://www.figma.com/) was used to create the logo.
+- [Birme](https://www.birme.net/?target_width=400&target_height=400&auto_focal=false&image_format=webp&quality_jpeg=100&quality_webp=80) was used to resize the size of images.
+- [RGBA Color Picker](https://rgbacolorpicker.com/) was used to select suitable color for background.
