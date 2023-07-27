@@ -157,3 +157,9 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
 - [Figma](https://www.figma.com/) was used to create the logo.
 - [Birme](https://www.birme.net/?target_width=400&target_height=400&auto_focal=false&image_format=webp&quality_jpeg=100&quality_webp=80) was used to resize the size of images.
 - [RGBA Color Picker](https://rgbacolorpicker.com/) was used to select suitable color for background.
+----
+## Acknowledgments
+- [Iuliia Konovalova](https://github.com/IuliiaKonovalova) my mentor has been a great supporter, guiding me through the development of the project and helping me to learn a lot of new things by challenging me to do something new.
+- [Code Institute](https://codeinstitute.net/de/)  tutors and Slack community members for their support and help.
+- [Coding Artist](https://www.youtube.com/@CodingArtist)  for her javascript ideas.
+- [Kevin Powell](https://www.youtube.com/@KevinPowell) for his CSS tutorials.
