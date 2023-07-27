@@ -117,5 +117,38 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
 - Improve commit message quality (I'm a git bigginer, so not all commits meet standards, but will try to improve in future)
 
 ------
+## Credits
 
+- Icons were sources from [Font Awesome](https://fontawesome.com/search).
+- Background image took from [pxfuel](https://www.pxfuel.com/en/desktop-wallpaper-iwwtp/download/2880x1800).
+- Inspiration for the drag and drop game from [Coding Artist](https://www.youtube.com/@CodingArtist) on her YouTube channel.
+- Inspiration for the Alphabets card  [Iuliia Konovalova](https://github.com/IuliiaKonovalova) on GitHub.
+
+### Alphabets Images:
+[Apple](https://www.google.com/search?rlz=1C5CHFA_enDE951DE951&sxsrf=AB5stBi2Z6SbQSTAQcf38D1hsIKBkIU7Zg:1689800905949&q=apple+fruit&tbm=isch&sa=X&ved=2ahUKEwjQxPX11puAAxVnhv0HHaxyDacQ0pQJegQICRAB&biw=1440&bih=764&dpr=2#imgrc=OgCZEJ9BvXKAIM)
+[Ball]( https://www.google.com/search?q=ball&tbm=isch&chips=q:ball,g_1:soccer:rg-9kDU_XCQ%3D&rlz=1C5CHFA_enDE951DE951&hl=en-GB&sa=X&ved=2ahUKEwjDuJO425uAAxVsmycCHSVLDPUQ4lYoAXoECAEQMQ&biw=1440&bih=764#imgrc=4hYw7WauEbWk4M)
+[Cat](https://www.google.com/search?q=cat&tbm=isch&ved=2ahUKEwjS5sbg15uAAxXTpUwKHXHhCXAQ2-cCegQIABAA&oq=cat&gs_lcp=CgNpbWcQAzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgcIABCKBRBDMgUIABCABDoECCMQJzoKCAAQigUQsQMQQzoHCCMQ6gIQJ1C6A1izEmDbFGgBcAB4AIABfYgBnQSSAQM3LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=qVG4ZJLuItPLsgLxwqeABw&bih=764&biw=1440&rlz=1C5CHFA_enDE951DE951#imgrc=4fIvgFkv-TVvaM&imgdii=kkOZneXqMy3cGM)
+[Dog](https://www.google.com/search?rlz=1C5CHFA_enDE951DE951&sxsrf=AB5stBifxTVeiFA644VXAFWaKtSZo9zpng:1689809701168&q=dog&tbm=isch&sa=X&ved=2ahUKEwjtlefX95uAAxUT2AIHHb6ECjAQ0pQJegQIDRAB&biw=1440&bih=821&dpr=2#imgrc=Kua2uYskZA9ydM&imgdii=2bypY_ArvTI8xM)
+[Elephent](https://rare-gallery.com/843641-elephants-white-background.html)
+[Fish](https://www.tankarium.com/colorful-fish/)
+[Grape](https://www.freepik.com/premium-vector/isolated-dark-grape-with-green-leaf_14876904.htm)
+[Hat](https://www.trendhim.de/piero-hellbrauner-moda-panama-hut-mit-marineblauem-band-p.html?th_source_locale=en-NZ)
+[Ice cream](https://www.publicdomainpictures.net/en/view-image.php?image=173856&picture=ice-cream-white-isolated)
+[Jug](https://www.rewardhospitality.co.nz/drinkware-and-bar/serving-and-storage/jugs/jug-1-3lt-arc-glass-6)
+[Kite](https://www.inthebreeze.com/prod-115-1-10-273/rainbow-30-diamond-kite.htm)
+[Leaf](https://www.freepik.com/free-photo/growth-close-up-environmental-lush-natural_1047575.htm#query=leaf&position=3&from_view=keyword&track=sph)
+[Monkey](https://www.istockphoto.com/de/foto/gr%C3%BCne-meerkatze-chlorocebus-pygerythrus-gm93214254-6228262?utm_campaign=srp_photos_10&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fmonkey%2F&utm_medium=affiliate&utm_source=pexels&utm_term=monkey)
+[Nest](https://de.vecteezy.com/vektorkunst/6762006-vektorbild-eines-vogelnestes-mit-eiern-eps-10)
+[Onion](https://www.vecteezy.com/vector-art/1992951-fresh-onion-healthy-vegetable-icon)
+[Pen](https://www.bigbasket.com/pd/40290249/uni-ball-click-gel-pen-blue-ink-1-pc/)
+[Queen](https://stock.adobe.com/de/images/cute-girl-queen-isolated-female-character-in-a-princess-costume-with-a-crown-and-scepter-on-a-white-background/105898343)
+[Rabbit](https://depositphotos.com/28301569/stock-photo-grey-rabbit-on-a-white.html)
+[Sun](https://de.vecteezy.com/vektorkunst/551126-sun-symbol)
+[Tiger](https://www.vecteezy.com/vector-art/5113014-cute-baby-tiger-cartoon-on-white-background)
+[Umbrella](https://stock.adobe.com/search?k=umbrella+clipart&asset_id=125827920)
+[Violin](https://www.amazon.com/Hey-Play-Violin-Adjustable-Strings/dp/B08BCSTZ51)
+[Watermelon](https://www.walmart.com/ip/Fresh-Personal-Watermelon-Each/44390986)
+[Xylophone](https://www.fruugo.de/8-keys-compact-size-xylophone-glockenspiel-with-wooden-mallets-percussion-musical-instrument-toy-gift-for-kids-children/p-151066111-319333927?language=en)
+[Yolk](https://www.istockphoto.com/de/foto/raw-eigelb-gm517542714-89544969)
+[Zebra](https://www.istockphoto.com/de/vektor/zebra-logo-isoliertes-zebra-auf-wei%C3%9Fem-hintergrund-gm1256855778-368148075)
 
