@@ -1,3 +1,4 @@
+/* jshint esversion:8 */
 // Function to show the rules modal when the "RULES" button is clicked
 const openRulesButton = document.getElementById('openrules_btn');
 const closeModalButton = document.getElementById('closemodal_btn');

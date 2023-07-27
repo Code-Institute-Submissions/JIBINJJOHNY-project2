@@ -28,6 +28,7 @@ body {
     flex: 1;
     color: #1B366A;
     margin-top: 20px;
+    margin-right: 35px;
 }
 
 .app_name {
@@ -81,7 +82,7 @@ button {
 .mainpage_menus {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 /* Footer styles */
@@ -128,8 +129,7 @@ button {
 
 /* --- << Alphabets page >> --- */
 .alphabet_card {
-    margin-top: 2%;
-    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .menu {
@@ -328,6 +328,9 @@ img {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
+    .mainpage_menus {
+        margin-top: 50%;
+    }
 
     /* Media for main page */
     .modal-content h2 {
@@ -344,19 +347,26 @@ img {
     }
 
     .app_name {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .app__slogan {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
 /* ... (responsive styles for devices with max width 600px) */
 @media screen and (max-width: 480px) {
-
+    .mainpage_menus {
+        margin-top: 30%;
+    }
 
     /* Media for alphabets page */
+    .alphabet_card {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
     .card {
         width: 260px;
         height: 360px;
@@ -366,6 +376,24 @@ img {
     .card-back {
         width: 90%;
         height: 90%;
+    }
+
+    .card h2 {
+        font-size: 60px;
+    }
+
+    .card img {
+        width: 180px;
+        height: 180px;
+    }
+
+    card p {
+        font-size: 25px;
+    }
+
+    .speak_btn {
+        padding: 5px 5px;
+        font-size: 12px;
     }
 
     /* Media for game page */

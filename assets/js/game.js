@@ -1,3 +1,4 @@
+/* jshint esversion:8 */
 let draggableObjects;
 let dropPoints;
 const dragContainer = document.querySelector(".draggable-objects");
@@ -5,8 +6,8 @@ const dropContainer = document.querySelector(".drop-points");
 const playAgainButton = document.querySelector(".play-again-button");
 
 let deviceType = "";
-let initialX = 0,
-    initialY = 0;
+let initialX = 0
+let initialY = 0;
 let currentElement = "";
 let moveElement = false;
 

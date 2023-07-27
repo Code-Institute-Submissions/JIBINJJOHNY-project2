@@ -1,3 +1,4 @@
+/* jshint esversion:8 */
 // Selecting necessary elements from the HTML
 const card = document.querySelector('.card');
 const cardFront = document.querySelector('.card-front');

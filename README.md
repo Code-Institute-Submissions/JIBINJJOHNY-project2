@@ -128,7 +128,7 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
 [Apple](https://www.google.com/search?rlz=1C5CHFA_enDE951DE951&sxsrf=AB5stBi2Z6SbQSTAQcf38D1hsIKBkIU7Zg:1689800905949&q=apple+fruit&tbm=isch&sa=X&ved=2ahUKEwjQxPX11puAAxVnhv0HHaxyDacQ0pQJegQICRAB&biw=1440&bih=764&dpr=2#imgrc=OgCZEJ9BvXKAIM)
 [Ball]( https://www.google.com/search?q=ball&tbm=isch&chips=q:ball,g_1:soccer:rg-9kDU_XCQ%3D&rlz=1C5CHFA_enDE951DE951&hl=en-GB&sa=X&ved=2ahUKEwjDuJO425uAAxVsmycCHSVLDPUQ4lYoAXoECAEQMQ&biw=1440&bih=764#imgrc=4hYw7WauEbWk4M)
 [Cat](https://www.google.com/search?q=cat&tbm=isch&ved=2ahUKEwjS5sbg15uAAxXTpUwKHXHhCXAQ2-cCegQIABAA&oq=cat&gs_lcp=CgNpbWcQAzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgcIABCKBRBDMgUIABCABDoECCMQJzoKCAAQigUQsQMQQzoHCCMQ6gIQJ1C6A1izEmDbFGgBcAB4AIABfYgBnQSSAQM3LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=qVG4ZJLuItPLsgLxwqeABw&bih=764&biw=1440&rlz=1C5CHFA_enDE951DE951#imgrc=4fIvgFkv-TVvaM&imgdii=kkOZneXqMy3cGM)
-[Dog](https://www.google.com/search?rlz=1C5CHFA_enDE951DE951&sxsrf=AB5stBifxTVeiFA644VXAFWaKtSZo9zpng:1689809701168&q=dog&tbm=isch&sa=X&ved=2ahUKEwjtlefX95uAAxUT2AIHHb6ECjAQ0pQJegQIDRAB&biw=1440&bih=821&dpr=2#imgrc=Kua2uYskZA9ydM&imgdii=2bypY_ArvTI8xM)
+[Dog](https://www.istockphoto.com/de/foto/golden-retriever-2-jahre-gm93215820-7530429)
 [Elephent](https://rare-gallery.com/843641-elephants-white-background.html)
 [Fish](https://www.tankarium.com/colorful-fish/)
 [Grape](https://www.freepik.com/premium-vector/isolated-dark-grape-with-green-leaf_14876904.htm)
