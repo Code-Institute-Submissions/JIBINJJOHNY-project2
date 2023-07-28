@@ -11,7 +11,12 @@ let initialX = 0
 let initialY = 0;
 let currentElement = "";
 let moveElement = false;
-
+// Event handler for DOMContentLoaded
+window.addEventListener("DOMContentLoaded", async () => {
+    // Call the creator function to generate the initial game state
+    await creator();
+    count = 0;
+});
 /**
  * isTouchDevice function attempts to create a touch event and detects if the device supports touch or not. 
  * If touch events are supported, deviceType is set to "touch"; otherwise, it's set to "mouse". 
@@ -227,9 +232,3 @@ playAgainButton.addEventListener("click", () => {
     playAgainButton.classList.add("hide");
     creator();
 });
-
-// When the window is loaded, call the creator function to generate the initial game state
-window.onload = async () => {
-    await creator();
-    count = 0;
-};

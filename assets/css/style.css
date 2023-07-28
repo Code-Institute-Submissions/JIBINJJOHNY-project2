@@ -1,3 +1,10 @@
+:root {
+    --ff: 'Comic Sans Ms', sans-serif;
+    --primary-clr: #1B366A;
+    --secondary-clr: #e8e818;
+    --secondary-clr-light: #fff;
+}
+
 /* ----- << Global Settings >> -----*/
 *,
 *::before,
@@ -17,7 +24,7 @@ li,
 button {
     margin: 0;
     padding: 0;
-    font-family: Comic Sans MS, sans-serif;
+    font-family: var(--ff);
 }
 
 /* Apply a box-sizing border-box model to all elements */
@@ -30,7 +37,7 @@ body {
     background: url(../images/main.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    color: #1B366A;
+    color: var(--primary-clr);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -39,7 +46,7 @@ body {
 
 /* Center the header */
 header {
-    color: #1B366A;
+    color: var(--primary-clr);
     text-align: center;
     padding: 20px;
     display: flex;
@@ -70,8 +77,8 @@ header {
 }
 
 button {
-    background-color: #e8e818;
-    color: #1B366A;
+    background-color: var(--secondary-clr);
+    color: var(--primary-clr);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -99,7 +106,7 @@ button {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--secondary-clr-light);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -108,13 +115,13 @@ button {
 
 /* Footer styles */
 .main_footer {
-    color: #fff;
+    color: var(--secondary-clr-light);
     text-align: center;
     padding: 20px;
 }
 
 .main_footer ul {
-    color: #fff;
+    color: var(--secondary-clr-light);
     margin: 10px;
     font-size: 24px;
     text-decoration: none;
@@ -129,6 +136,10 @@ button {
 .main_footer img {
     width: 25px;
     height: 25px;
+}
+
+.main_footer img:hover {
+    transform: scale(1.5);
 }
 
 /* Specific styles for alphabet.html */
@@ -161,7 +172,7 @@ button {
 
 .card h2 {
     font-size: 80px;
-    color: #1B366A;
+    color: var(--primary-clr);
 }
 
 .card img {
@@ -192,7 +203,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--secondary-clr-light);
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -222,12 +233,11 @@ button {
     max-width: 37.5em;
     background-color: rgba(245, 241, 243, 0.4);
     padding: 1em 0.5em;
-    position: sticky;
+    position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 0.8em;
-    margin-top: 100px;
 }
 
 /* Styling for the heading */
@@ -235,11 +245,11 @@ button {
     text-align: center;
     width: 80%;
     margin: 0 auto 2em auto;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     line-height: 1.8em;
-    color: #1B366A;
+    color: var(--primary-clr);
 }
 
 /* Styling for the container that holds draggable alphabet images and drop points */
@@ -268,7 +278,7 @@ img {
     height: 9em;
     display: grid;
     place-items: center;
-    border: 0.25em dashed #1B366A;
+    border: 0.25em dashed var(--primary-clr);
     border-radius: 0.8em;
     font-weight: bold;
 }
@@ -315,6 +325,21 @@ img {
     .app__slogan {
         font-size: 15px;
     }
+
+    /* Media for game page */
+    .game_title {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .words {
+        width: 5em;
+        height: 5em;
+    }
+
+    img {
+        width: 4em;
+    }
 }
 
 /* ... (responsive styles for devices with max width 600px) */
@@ -358,18 +383,5 @@ img {
         font-size: 12px;
     }
 
-    /* Media for game page */
-    .game_title {
-        width: 80%;
-        font-size: 0.8em;
-    }
 
-    .words {
-        width: 5em;
-        height: 5em;
-    }
-
-    img {
-        width: 4em;
-    }
 }
