@@ -8,11 +8,11 @@ To confirm correct functionality, responsiveness and appearance:
 
     - Chrome :
 
-    ![chrome browser](./readme_images/chrome.png)
+    ![chrome browser](./documents/chrome.png)
 
     - Safari :
 
-    ![safari browser](./readme_images/safari.png)
+    ![safari browser](./documents/safari.png)
 
     - Firefox :
-    ![firefox browser](./readme_images/firefox.png)
+    ![firefox browser](./documents/firefox.png)

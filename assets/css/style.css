@@ -7,54 +7,82 @@
     padding: 0;
 }
 
-/* CSS styles for the body element */
+/* Reset some default styles for consistency across browsers */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans MS, sans-serif;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Global styles for the entire page */
 body {
     background: url(../images/main.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    color: #1B366A;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    font-family: Comic Sans MS, sans-serif;
+    min-height: 100vh;
 }
 
-/*----- << Home Page Styling >>----- */
-/* Title styles */
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+/* Center the header */
+header {
     color: #1B366A;
-    margin-top: 20px;
-    margin-right: 35px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 10px;
 }
 
 .app_name {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 70px;
 }
 
 .app__slogan {
-    font-size: 25px;
-    font-style: italic;
+    font-size: 20px;
 }
 
-/* Hidden class for hiding elements */
-.hidden {
-    display: none;
+/* Main menu styles */
+.mainpage_menus {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Button styles */
 button {
-    padding: 10px 15px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 10px;
     background-color: #e8e818;
     color: #1B366A;
-    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Modal styles */
@@ -78,73 +106,54 @@ button {
     width: 70%;
 }
 
-/* Main menu styles */
-.mainpage_menus {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-}
-
 /* Footer styles */
 .main_footer {
-    color: #1B366A;
+    color: #fff;
     text-align: center;
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
 }
 
-/* Social links in the footer */
 .main_footer ul {
-    list-style: none;
+    color: #fff;
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .main_footer ul li {
+    list-style: none;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
-.main_footer ul li:last-child {
-    margin-right: 0;
+.main_footer img {
+    width: 25px;
+    height: 25px;
 }
 
-.main_footer a {
-    color: #1B366A;
-    text-decoration: none;
-    font-size: 24px;
+/* Specific styles for alphabet.html */
+.return-button img {
+    width: 25px;
+    height: 25px;
 }
 
-/* Social media icons styles */
-.main_footer i {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+.title {
     text-align: center;
+    flex-grow: 1;
 }
 
-.main_footer li:hover {
-    transform: scale(1.5);
-}
-
-/* --- << Alphabets page >> --- */
 .alphabet_card {
-    margin-top: 5%;
-}
-
-.menu {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    color: #1B366A;
-    padding: 10px;
-    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .card {
     width: 300px;
     height: 400px;
-    perspective: 1000px;
     cursor: pointer;
     position: relative;
     margin-bottom: 50px;
@@ -153,10 +162,6 @@ button {
 .card h2 {
     font-size: 80px;
     color: #1B366A;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
 }
 
 .card img {
@@ -164,14 +169,11 @@ button {
     height: 200px;
     margin-bottom: 10px;
     object-fit: cover;
-    object-position: top;
 }
 
 .card p {
     font-size: 30px;
     margin-top: 10px;
-    color: #1B366A;
-    font-weight: bold;
 }
 
 /* CSS styles for the front and back side of the card */
@@ -185,51 +187,18 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    /* Set the background color for the card sides */
     border: 1px solid #ccc;
-    /* Add a border around the card sides */
     border-radius: 10px;
-    /* Add rounded corners to the card */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow to the card */
     transition: transform 0.6s;
-    /* Add a smooth transition effect when flipping the card */
 }
 
 /* CSS styles for the back side of the card */
 .card-back {
     transform: rotateY(180deg);
-    /* Initially hide the back side of the card by rotating it */
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-/* CSS styles for the "Next" button */
-#nextButton {
-    margin-top: 0px;
-    display: inline-block;
-    /* Initially hide the "Next" button */
-    order: 3;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    order: 2;
-}
-
-#nextButton:hover {
-    background-color: #e8e818;
-    /* Change the background color on hover */
-    color: #1B366A;
-    /* Change the text color on hover */
-}
-
-/* CSS styles for the card when hovered to flip to the back side */
 .card:hover .card-front {
     transform: rotateY(180deg);
 }
@@ -239,23 +208,7 @@ button {
     transform: rotateY(0deg);
 }
 
-.return-button {
-    color: #1B366A;
-    text-decoration: none;
-    font-size: 25px;
-    margin-left: 30px;
-}
-
-.return-button i {
-    margin-right: 5px;
-}
-
-.return-button i:hover {
-    transform: scale(1.5);
-}
-
-/* --- << Game page >> --- */
-
+/* Specific styles for game.html */
 .game_container {
     width: 90%;
     max-width: 37.5em;
