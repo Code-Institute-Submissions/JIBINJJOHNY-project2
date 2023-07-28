@@ -1,4 +1,5 @@
 /* jshint esversion:8 */
+// Selecting necessary elements from the HTML
 let draggableObjects;
 let dropPoints;
 const dragContainer = document.querySelector(".draggable-objects");
@@ -11,7 +12,10 @@ let initialY = 0;
 let currentElement = "";
 let moveElement = false;
 
-// Detect touch device
+/**
+ * isTouchDevice function attempts to create a touch event and detects if the device supports touch or not. 
+ * If touch events are supported, deviceType is set to "touch"; otherwise, it's set to "mouse". 
+ */
 const isTouchDevice = () => {
     try {
         document.createEvent("TouchEvent");
@@ -25,12 +29,20 @@ const isTouchDevice = () => {
 
 let count = 0;
 
-// Function to generate a random value from an array
+/**
+ * Function to generate a random value from an array
+ * Function takes an array (data) as input and returns a random element from that array.
+ */
 const randomValueGenerator = (data) => {
     return data[Math.floor(Math.random() * data.length)];
 };
 
-// Drag & Drop Functions
+/**
+ * Drag & Drop Functions
+ * function is triggered when a draggable object starts to be dragged.
+ * It first detects if the device is touch or mouse-based. 
+ * For touch devices, it stores the initial touch coordinates and sets moveElement to true.
+ */
 function dragStart(e) {
     if (isTouchDevice()) {
         // For touch devices
@@ -43,12 +55,19 @@ function dragStart(e) {
         e.dataTransfer.setData("text", e.target.id);
     }
 }
-
+/**
+ * dragOver(e) function is triggered when a draggable object is being dragged over a drop point. 
+ * It prevents the default behavior to allow for dropping.
+ */
 function dragOver(e) {
     e.preventDefault();
 }
 
-// Function to handle touchmove event for touch devices
+/**
+ * Function to handle touchmove event for touch devices
+ * Function handles the touchmove event for touch devices. 
+ * If moveElement is true, it calculates the new X and Y coordinates and moves the dragged element accordingly.
+ */
 const touchMove = (e) => {
     if (moveElement) {
         e.preventDefault();
@@ -65,7 +84,10 @@ const touchMove = (e) => {
     }
 };
 
-// Function to handle drop event
+/**
+ * Function to handle drop event
+ * Function is triggered when a draggable object is dropped over a drop point. 
+ */
 const drop = (e) => {
     e.preventDefault();
     if (isTouchDevice()) {
@@ -115,7 +137,11 @@ const drop = (e) => {
     }
 };
 
-// Function to fetch alphabet data from the JSON file
+/**
+ * Function to fetch alphabet data from the JSON file
+ * This asynchronous function fetches alphabet data from a JSON file named "assets/js/alphabets.json". 
+ * It returns the data obtained from the JSON file.
+ */
 async function fetchAlphabetData() {
     try {
         const response = await fetch('assets/js/alphabets.json');
@@ -129,7 +155,10 @@ async function fetchAlphabetData() {
     }
 }
 
-// Function to create alphabet images and word drop points
+/**
+ * Function to create alphabet images and word drop points
+ * This asynchronous function creates the alphabet images and word drop points for the game.
+ */
 const creator = async () => {
     dragContainer.innerHTML = "";
     dropContainer.innerHTML = "";
@@ -161,12 +190,10 @@ const creator = async () => {
     setupEventListeners(); // Call the function to set up event listeners for new elements
 };
 
-const stopGame = () => {
-    // Your code to handle game completion, if needed
-    // ...
-};
-
-// Function to set up event listeners for draggable objects and drop points
+/**
+ * Function to set up event listeners for draggable objects and drop points
+ * Function sets up event listeners for the draggable objects and drop points.
+ */
 const setupEventListeners = () => {
     dropPoints = document.querySelectorAll(".words");
     draggableObjects = document.querySelectorAll(".draggable-image");

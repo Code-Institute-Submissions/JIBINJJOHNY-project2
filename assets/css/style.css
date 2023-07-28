@@ -52,7 +52,7 @@ header {
 }
 
 .app_name {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .app__slogan {
@@ -176,6 +176,12 @@ button {
     margin-top: 10px;
 }
 
+.speak_btn img {
+    width: 15px;
+    height: 20px;
+    padding-top: 9px;
+}
+
 /* CSS styles for the front and back side of the card */
 .card-front,
 .card-back {
@@ -209,24 +215,27 @@ button {
 }
 
 /* Specific styles for game.html */
+
+
 .game_container {
     width: 90%;
     max-width: 37.5em;
     background-color: rgba(245, 241, 243, 0.4);
-    padding: 2em 0.5em;
-    position: absolute;
+    padding: 1em 0.5em;
+    position: sticky;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 0.8em;
+    margin-top: 100px;
 }
 
 /* Styling for the heading */
 .game_title {
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: 0 auto 2em auto;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.03em;
     line-height: 1.8em;

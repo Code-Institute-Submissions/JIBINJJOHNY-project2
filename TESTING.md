@@ -16,3 +16,7 @@ To confirm correct functionality, responsiveness and appearance:
 
     - Firefox :
     ![firefox browser](./documents/firefox.png)
+
+ ## Responsiveness
+
+ - The site has been tested using the devtools that are implemented in Chrome browsers.

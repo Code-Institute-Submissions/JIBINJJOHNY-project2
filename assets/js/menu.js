@@ -1,22 +1,29 @@
 /* jshint esversion:8 */
-// Function to show the rules modal when the "RULES" button is clicked
+// Selecting necessary elements from the HTML
 const openRulesButton = document.getElementById('openrules_btn');
 const closeModalButton = document.getElementById('closemodal_btn');
 const redirectButton = document.getElementById("redirect_btn");
 const alphabetsButton = document.getElementById("alphabets_btn");
 const gameButton = document.getElementById("game_btn");
 const rulesModal = document.getElementById('rules_model');
-
+/**
+ * showRulesModal function is defined to show the rules modal.
+ *  It sets the display style property of rulesModal to "flex", which means the modal will become visible and displayed as a flexible container.
+ */
 function showRulesModal() {
     rulesModal.style.display = 'flex';
 }
 
-// Function to close the rules modal when the "Close" button inside the modal is clicked
+/**
+ * Function to close the rules modal when the "Close" button inside the modal is clicked
+ */
 function closeModal() {
     rulesModal.style.display = 'none';
 }
 
-// Function to handle the click event of the "START" button
+/**
+ * Function to handle the click event of the "START" button
+ */
 function handleStartClick() {
     // Hide the "RULES" button and the "START" button
     openRulesButton.style.display = "none";
@@ -27,13 +34,17 @@ function handleStartClick() {
     gameButton.style.display = "block";
 }
 
-// Function to handle the click event of the "ALPHABETS" button
+/**
+ * Function to handle the click event of the "ALPHABETS" button
+ */
 function redirectToAlphabets() {
     // Redirect the user to the "alphabets.html" page
     window.location.href = "alphabets.html";
 }
 
-// Function to handle the click event of the "GAME" button
+/**
+ * Function to handle the click event of the "GAME" button
+ */
 function redirectToGame() {
     // Redirect the user to the "quiz.html" page
     window.location.href = "game.html";
