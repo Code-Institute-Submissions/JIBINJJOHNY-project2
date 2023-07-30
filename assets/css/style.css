@@ -226,8 +226,6 @@ button {
 }
 
 /* Specific styles for game.html */
-
-
 .game_container {
     width: 90%;
     max-width: 37.5em;
@@ -269,6 +267,7 @@ button {
 /* Styling for the image*/
 img {
     width: 8em;
+    height: 8em;
     filter: drop-shadow(0 0.3em 0.9em rgba(0, 0, 0, 0.25));
 }
 
@@ -339,6 +338,7 @@ img {
 
     img {
         width: 4em;
+        height: 4em;
     }
 }
 
@@ -378,10 +378,8 @@ img {
         font-size: 25px;
     }
 
-    .speak_btn {
-        padding: 5px 5px;
-        font-size: 12px;
+    .speak_btn img {
+        width: 12px;
+        height: 19px;
     }
-
-
 }
