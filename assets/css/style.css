@@ -372,6 +372,7 @@ img {
     .card img {
         width: 180px;
         height: 180px;
+        padding-top: 13px;
     }
 
     card p {
@@ -379,7 +380,8 @@ img {
     }
 
     .speak_btn img {
-        width: 12px;
-        height: 19px;
+        width: 14px;
+        height: 24px;
+
     }
 }
