@@ -27,11 +27,6 @@ button {
     font-family: var(--ff);
 }
 
-/* Apply a box-sizing border-box model to all elements */
-* {
-    box-sizing: border-box;
-}
-
 /* Global styles for the entire page */
 body {
     background: url(../images/main.webp);
@@ -42,6 +37,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 /* Center the header */
@@ -52,6 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .title {
@@ -233,11 +233,11 @@ button {
     max-width: 37.5em;
     background-color: rgba(245, 241, 243, 0.4);
     padding: 1em 0.5em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styling for the heading */
