@@ -20,7 +20,33 @@ To confirm correct functionality, responsiveness and appearance:
  ## Responsiveness
 
  - The site has been tested using the devtools that are implemented in Chrome browsers.
+# Validator testing
+ ### HTML
+  ##### Menu Page
+  - No errors or warnings were found when it was run through the official W3C validator.
+    - ![menu page html validator](documents/htmlvalidator_menu.png)
+##### Alphabets page
+-  No errors or warnings were found when it was run through the official W3C validator.
+    - ![alphabets page html validator](documents/htmlvalidatorar_alphabets.png)
+##### Game page
+-  No errors or warnings were found when it was run through the official W3C validator.
+    - ![game page html validator](documents/htmlvalidator_game.png)
 
+### CSS
+- No errors were found in the official W3C (Jigsaw) check.
+    -![css validator](documents/cssvalidator.png)
+- 1 warnings were found
+    - ![css validator warning](documents/css%20warning.png)
+    -  it means that CSS variables can have their values changed dynamically during runtime, making it challenging for static analysis tools to predict their final values during validation.
+### JS
+
+- No errors or warnings were found when passing through the official [JSHint](https://jshint.com/) validator:
+
+  ![JSHint Validator menu Page](documents/jshintmenu.png)
+  ![JSHint Validator alphabets Page](documents/jshintalphabets.png)
+  ![JSHint Validator menu Page](documents/jshintgame.png)
+
+  ### Lighthouse Report
 
 ## LightHouse report
 - With the help of Lighthouse in devtools, I have been able to confirm that the web app functions well, is accessible and that the colours and fonts chosen are readable
