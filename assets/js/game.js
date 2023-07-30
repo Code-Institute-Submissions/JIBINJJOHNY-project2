@@ -1,11 +1,17 @@
 /* jshint esversion:8 */
 // Selecting necessary elements from the HTML
-let draggableObjects;
-let dropPoints;
+const gameOptionsContainer = document.getElementById("game-options-container");
+const gameContainer = document.querySelector(".game_container");
+const alphabetsBtn = document.getElementById("alphabets_btn");
+const gameBtn = document.getElementById("game_btn");
+const backBtn = document.getElementById("backbutton");
+
 const dragContainer = document.querySelector(".draggable-objects");
 const dropContainer = document.querySelector(".drop-points");
 const playAgainButton = document.querySelector(".play-again-button");
 
+let draggableObjects;
+let dropPoints;
 let deviceType = "";
 let initialX = 0;
 let initialY = 0;
@@ -13,12 +19,25 @@ let currentElement = "";
 let moveElement = false;
 let count = 0;
 
+// Function to hide game options and show game container
+const showGameContainer = () => {
+    gameOptionsContainer.classList.add("hidden");
+    gameContainer.classList.remove("hidden");
+};
+
+// Function to show game options and hide game container
+const showGameOptionsContainer = () => {
+    gameOptionsContainer.classList.remove("hidden");
+    gameContainer.classList.add("hidden");
+};
+
 // Event handler for DOMContentLoaded
 window.addEventListener("DOMContentLoaded", async () => {
     // Call the creator function to generate the initial game state
     await creator();
     count = 0;
 });
+
 /**
  * isTouchDevice function attempts to create a touch event and detects if the device supports touch or not. 
  * If touch events are supported, deviceType is set to "touch"; otherwise, it's set to "mouse". 
@@ -33,8 +52,6 @@ const isTouchDevice = () => {
         return false;
     }
 };
-
-
 
 /**
  * Function to generate a random value from an array
@@ -233,3 +250,19 @@ playAgainButton.addEventListener("click", () => {
     playAgainButton.classList.add("hide");
     creator();
 });
+/// Event listener for the back button
+backBtn.addEventListener("click", () => {
+    showGameOptionsContainer();
+});
+
+// Event listener for the game buttons to show the game container
+alphabetsBtn.addEventListener("click", () => {
+    showGameContainer();
+});
+
+gameBtn.addEventListener("click", () => {
+    showGameContainer();
+});
+
+// Call this function to hide game container and show game options container initially
+showGameOptionsContainer();
