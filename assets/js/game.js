@@ -7,7 +7,7 @@ const dropContainer = document.querySelector(".drop-points");
 const playAgainButton = document.querySelector(".play-again-button");
 
 let deviceType = "";
-let initialX = 0
+let initialX = 0;
 let initialY = 0;
 let currentElement = "";
 let moveElement = false;
@@ -25,7 +25,7 @@ const isTouchDevice = () => {
     try {
         document.createEvent("TouchEvent");
         deviceType = "touch";
-        return true;
+
     } catch (e) {
         deviceType = "mouse";
         return false;
@@ -138,7 +138,6 @@ const drop = (e) => {
     }
     if (count === 3) {
         playAgainButton.classList.remove("hide");
-        stopGame(); // Your code to handle game completion, if needed
     }
 };
 

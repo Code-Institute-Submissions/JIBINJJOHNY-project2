@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Fetch the alphabet data from the JSON file and initialize the app
     getVoices();
     fetchAlphabetData();
+    speakWord();
 
     // Check if the browser supports the "onvoiceschanged" event
     if (synth.onvoiceschanged !== undefined) {
@@ -106,7 +107,6 @@ function getBritishEnglishVoice() {
  * Function to Speak the Current Word Using Speech Synthesis
  * speakWord function is responsible for speaking the current word associated with the displayed letter using speech synthesis.
  */
-/* unused: false */
 function speakWord() {
     const currentLetter = shuffledAlphabet[currentIndex];
     const wordToSpeak = currentLetter.word;

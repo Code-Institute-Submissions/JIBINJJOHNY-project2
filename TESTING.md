@@ -24,9 +24,9 @@ To confirm correct functionality, responsiveness and appearance:
 
 ## LightHouse report
 - With the help of Lighthouse in devtools, I have been able to confirm that the web app functions well, is accessible and that the colours and fonts chosen are readable
-    ### Home page
+    ### Menu page
 
-  ![home page lighthouse](documents/lighthouse_index.png)
+  ![menu page lighthouse](documents/lighthouse_index.png)
 
    ### Alphabets page
 
