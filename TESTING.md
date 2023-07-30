@@ -111,3 +111,40 @@ Game page | | | | | |
 
   ![response page lighthouse](./documents/lighthouse_game.png)
   -----
+### Bugs
+ **Solved bugs**
+1. The function to shuffle the sounds for each card does not work correctly.
+ - *Solutions:*  
+ ```js
+ function shuffleSounds() {
+    const tempVoices = [...voices];
+    shuffledVoices = [];
+    while (tempVoices.length > 0) {
+        const index = Math.floor(Math.random() * tempVoices.length);
+        shuffledVoices.push(tempVoices.splice(index, 1)[0]);
+    }
+}
+```
+   Add the above function to solve the problem.
+   
+1. when the Play Again" button is clicked. All draggable items should be reset to their initial state, and matching pairs should be reshuffled. it was not working.the droped images are still there not reshuffled.
+
+ - *Solutions:* 
+ ```js
+playAgainButton.addEventListener("click", () => {
+    draggableObjects.forEach((element) => {
+        element.classList.remove("hide");
+        element.setAttribute("draggable", "true");
+    });
+
+    dropPoints.forEach((element) => {
+        element.classList.remove("dropped");
+        element.innerHTML = "";
+    });
+
+    count = 0;
+    playAgainButton.classList.add("hide");
+    creator();
+});
+````
+   Using click event handler to solve this problem

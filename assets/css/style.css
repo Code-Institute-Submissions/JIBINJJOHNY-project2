@@ -5,7 +5,7 @@
     --secondary-clr-light: #fff;
 }
 
-/* ----- << Global Settings >> -----*/
+/* Global styles for the entire page */
 *,
 *::before,
 *::after {
@@ -27,9 +27,8 @@ button {
     font-family: var(--ff);
 }
 
-/* Global styles for the entire page */
 body {
-    background: url(../images/main.webp);
+    background-image: url(../images/main.webp);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--primary-clr);
@@ -67,7 +66,7 @@ header {
 }
 
 /* Main menu styles */
-.mainpage_menus {
+.main_page_menus {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,8 @@ button {
     font-weight: 800;
 }
 
-.hidden {
+.hidden,
+.hide {
     display: none;
 }
 
@@ -111,35 +111,6 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 70%;
-}
-
-/* Footer styles */
-.main_footer {
-    color: var(--secondary-clr-light);
-    text-align: center;
-    padding: 20px;
-}
-
-.main_footer ul {
-    color: var(--secondary-clr-light);
-    margin: 10px;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.main_footer ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.main_footer img {
-    width: 25px;
-    height: 25px;
-}
-
-.main_footer img:hover {
-    transform: scale(1.5);
 }
 
 /* Specific styles for alphabet.html */
@@ -292,9 +263,33 @@ img {
     justify-content: space-evenly;
 }
 
-/*Hide drag image and play again button*/
-.hide {
-    display: none;
+/* Footer styles */
+.main_footer {
+    color: var(--secondary-clr-light);
+    text-align: center;
+    padding: 20px;
+}
+
+.main_footer ul {
+    color: var(--secondary-clr-light);
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.main_footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main_footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.main_footer img:hover {
+    transform: scale(1.5);
 }
 
 /* Media Queries */

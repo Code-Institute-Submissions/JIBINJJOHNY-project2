@@ -57,13 +57,15 @@ The site can be accessed by this [link]( https://jibinjjohny.github.io/project2/
   ![Drag and drop the game before starting it](documents/gamebefore.png)
   ![Drag and drop game after game](documents/gameafter.png)
   ----
-
-
 ## Technologies Used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages.
+[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) - was used to arrage words in game page.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) - was used to declaring global CSS variables and apply them throughout the project. 
+- [JS](https://www.javascript.com/) - was used for all functionality in this project.
+- [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) - was used to access and manipulate elements in html file.
 - [Figma](https://www.figma.com/) was used to make wireframes for the website.
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
 - [Git](https://git-scm.com/) was used for the version control of the website.
@@ -111,9 +113,8 @@ All test related documentation can be found in the [TESTING.md](TESTING.md) file
 -----
 ## Future improvements
 - Add Numbers
-- Add Add Basic Arithemetic operations.
-- Add Add more intresting games.
-- add custom 404 page.
+- Add more intresting games.
+- Add custom 404 page.
 - Improve commit message quality (I'm a git bigginer, so not all commits meet standards, but will try to improve in future)
 
 ------

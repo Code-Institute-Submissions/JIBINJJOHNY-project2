@@ -11,6 +11,8 @@ let initialX = 0;
 let initialY = 0;
 let currentElement = "";
 let moveElement = false;
+let count = 0;
+
 // Event handler for DOMContentLoaded
 window.addEventListener("DOMContentLoaded", async () => {
     // Call the creator function to generate the initial game state
@@ -32,7 +34,7 @@ const isTouchDevice = () => {
     }
 };
 
-let count = 0;
+
 
 /**
  * Function to generate a random value from an array
