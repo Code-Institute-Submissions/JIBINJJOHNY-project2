@@ -63,11 +63,11 @@ To confirm correct functionality, responsiveness and appearance:
 | Github icon in the footer| Click on the github icon | The user is redirected to the github page | Yes | Yes | - |
 | Linkedin icon inthe footer | Click on the linkedin icon | The user is redirected to the linkedin page | Yes | Yes | - |
 Alphabets page | | | | | |
-|  card | User hover the card | card flip on mouseover | Yes | Yes | - |
-| speak button | Click on the speak symbol button |It will pronounce the corresponding word with a British accent| Yes | Yes | - |
+| Card | User hover the card | card flip on mouseover | Yes | Yes |If the user mouseout it flips back to the front|
+| Speak button | Click on the speak symbol button |It will pronounce the corresponding word with a British accent| Yes | Yes | The user clicks the speak button, then speaks the word, otherwise sees the image and word |
 | Return button | Click on the back arrow button | The user is redirected to index page| Yes| Yes | - |
 Game page | | | | | |
-| images | Click the image and drag it to droping point | the image will stick on the droping point and shown green backround| Yes | Yes | If the user drop incorrect image cannot drop it |
+| Images | Click the image and drag it to droping point | the image will stick on the droping point and shown green backround| Yes | Yes | If the user drop incorrect image cannot drop it |
 | Playagain button | Click on the playgain button | Next game will start | Yes | Yes | - |
 | Return button | Click on the back arrow button | The user is redirected to index page| Yes| Yes | - |
 
@@ -113,25 +113,25 @@ Game page | | | | | |
   -----
 ### Bugs
  **Solved bugs**
-1. The function to shuffle the sounds for each card does not work correctly.
- - *Solutions:*  
- ```js
- function shuffleSounds() {
+   1. The function to shuffle the sounds for each card does not work correctly.
+   - *Solutions:*  
+   ```js
+    function shuffleSounds() {
     const tempVoices = [...voices];
     shuffledVoices = [];
     while (tempVoices.length > 0) {
         const index = Math.floor(Math.random() * tempVoices.length);
         shuffledVoices.push(tempVoices.splice(index, 1)[0]);
     }
-}
-```
+   }
+   ```
    Add the above function to solve the problem.
    
-1. when the Play Again" button is clicked. All draggable items should be reset to their initial state, and matching pairs should be reshuffled. it was not working.the droped images are still there not reshuffled.
+   1. when the Play Again" button is clicked. All draggable items should be reset to their initial state, and matching pairs should be reshuffled. it was not working.the droped images are still there not reshuffled.
 
- - *Solutions:* 
- ```js
-playAgainButton.addEventListener("click", () => {
+   - *Solutions:* 
+   ```js
+   playAgainButton.addEventListener("click", () => {
     draggableObjects.forEach((element) => {
         element.classList.remove("hide");
         element.setAttribute("draggable", "true");
@@ -145,6 +145,24 @@ playAgainButton.addEventListener("click", () => {
     count = 0;
     playAgainButton.classList.add("hide");
     creator();
-});
-````
-   Using click event handler to solve this problem
+   });
+   ```
+   Using click event handler to solve this problem.
+   1. The open model window only closes when I press the close button, but when I press outside the window it does not close.
+   - *Solutions:* 
+```js
+   function closeModalOutside(event) {
+    if (event.target === rulesModal) {
+        closeModal();
+    }
+   }
+// Event listener for clicks outside the modal content area
+window.addEventListener("click", closeModalOutside);
+ ```
+I added the above function and event listener to solve this problem.
+### Unsolved bugs
+- There is a problem in the game page, drop container the some words go outside the container.
+ ### Mistakes
+- Some committs are not properly committed.
+
+

@@ -22,7 +22,9 @@ function showRulesModal() {
 function closeModal() {
     rulesModal.style.display = 'none';
 }
-// Function to close the rules modal when the user clicks outside the modal content area
+/**
+ * Function to close the rules modal when the user clicks outside the modal content area
+ */
 function closeModalOutside(event) {
     if (event.target === rulesModal) {
         closeModal();
@@ -64,7 +66,7 @@ function redirectToGame() {
 }
 
 // Event listener for the "DOMContentLoaded" event
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (event) {
     // Add event listeners once the DOM is fully loaded
     openRulesButton.addEventListener('click', showRulesModal);
     closeModalButton.addEventListener('click', closeModal);
