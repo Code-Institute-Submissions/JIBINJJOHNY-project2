@@ -51,6 +51,26 @@ To confirm correct functionality, responsiveness and appearance:
         ![Mobile screen](./documents/mobilegame.png)
  
  -------
+ ## Manual testing
+
+| Feature | Action | Expected Result | Tested | Passed | Comments |
+| --- | --- | --- | --- | --- | --- |
+ Menu Page | | | | |  
+| Rules button | Click on the Rules button | The user is redirected to modal window | Yes| Yes | - |
+| Start button | Click on the Start button | The user is redirected to two option buttons | Yes | Yes | - |
+| Alphabets button | Click on the Alphabets button | The user is redirected to the alphabets page | Yes | Yes | - |
+| Game button | Click on the Game button | The user is redirected to the game page | Yes | Yes | - |
+| Github icon in the footer| Click on the github icon | The user is redirected to the github page | Yes | Yes | - |
+| Linkedin icon inthe footer | Click on the linkedin icon | The user is redirected to the linkedin page | Yes | Yes | - |
+Alphabets page | | | | | |
+|  card | User hover the card | card flip on mouseover | Yes | Yes | - |
+| speak button | Click on the speak symbol button |It will pronounce the corresponding word with a British accent| Yes | Yes | - |
+| Return button | Click on the back arrow button | The user is redirected to index page| Yes| Yes | - |
+Game page | | | | | |
+| images | Click the image and drag it to droping point | the image will stick on the droping point and shown green backround| Yes | Yes | If the user drop incorrect image cannot drop it |
+| Playagain button | Click on the playgain button | Next game will start | Yes | Yes | - |
+| Return button | Click on the back arrow button | The user is redirected to index page| Yes| Yes | - |
+
 # Validator testing
  ### HTML
   ##### Menu Page
